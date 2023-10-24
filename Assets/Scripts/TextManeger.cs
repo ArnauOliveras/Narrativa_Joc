@@ -32,6 +32,8 @@ public class TextManeger : MonoBehaviour
 
     void Update()
     {
+        
+
         if (isTalking)
         {
             nameTMP.text = thisName;

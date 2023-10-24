@@ -245,29 +245,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a21f1401b7d55b4c8ce9da8cc3b8385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Text:
-  - Name: Jan
-    Text: Bon dia mare...
-  - Name: Mare Jan
-    Text: Bon dia Jan. Que tal has dormit?
-  - Name: Jan
-    Text: "B\xE9 mare, pero estic una mica preucupat."
-  - Name: Mare Jan
-    Text: Que et passa?
-  - Name: Jan
-    Text: M'he notat una mica malament i marejat.
-  - Name: Mare Jan
-    Text: Recorda que avui anem al metge, li podras preguntar.
-  - Name: Jan
-    Text: Si, tambe li voldre preguntar unes altres coses
-  - Name: Mare Jan
-    Text: Perfecte, menja algo que marxarem ja
-  - Name: Jan
-    Text: Vale mare...
+  Text1: []
+  Text2: []
   DistanceToTalk: 1.5
+  textNum: 1
 --- !u!4 &2658717684932332837 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1123550051981646473, guid: 066b9035b24027d409065149bf09ed1b,
     type: 3}
   m_PrefabInstance: {fileID: 3130581682534225836}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6637153176881278726 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8604664552045492394, guid: 066b9035b24027d409065149bf09ed1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 3130581682534225836}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &8415343912633671594
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6637153176881278726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2.3399084
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.6699542, z: 0}
