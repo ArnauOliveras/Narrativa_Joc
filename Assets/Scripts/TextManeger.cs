@@ -12,7 +12,10 @@ public class TextManeger : MonoBehaviour
     public TextMeshProUGUI textTMP;
     string thisText;
     string thisName;
+    string text;
+    string name;
     public bool isTalking;
+    public bool isWriting;
     bool canDoNextNode;
     int nodeNum;
     public float timeContinuar = 2;
@@ -30,18 +33,70 @@ public class TextManeger : MonoBehaviour
 #endif
     }
 
+    int indice = 0;
+    bool lent = false;
+
     void Update()
     {
-        
+        if (isWriting)
+        {
+            bool canContinueName = false;
+            bool canContinueText = false;
+            List<char> listaDeLetrasNombre = new List<char>(name.ToCharArray());
+            List<char> listaDeLetrasTexto = new List<char>(text.ToCharArray());
+
+            if (lent)
+            {
+                if (listaDeLetrasNombre.Count > indice)
+                {
+                    thisName = thisName + listaDeLetrasNombre[indice];
+                }
+                else
+                {
+                    canContinueName = true;
+                }
+
+                if (listaDeLetrasTexto.Count > indice)
+                {
+                    thisText = thisText + listaDeLetrasTexto[indice];
+                }
+                else
+                {
+                    canContinueText = true;
+                }
+
+                indice++;
+                lent = false;
+            }
+            else
+            {
+                lent = true;
+            }
+
+
+
+            nameTMP.text = thisName;
+            textTMP.text = thisText;
+
+            if (canContinueName && canContinueText)
+            {
+                canDoNextNode = true;
+                indice = 0;
+                thisName = "";
+                thisText = "";
+                nextButton.SetActive(true);
+                isWriting = false;
+            }
+
+
+        }
 
         if (isTalking)
         {
-            nameTMP.text = thisName;
-            textTMP.text = thisText;
             if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.KeypadEnter)) && canDoNextNode)
             {
                 SetNextNode();
-                StartCoroutine(CanDoNextNode());
+                //StartCoroutine(CanDoNextNode());
                 canDoNextNode = false;
                 nextButton.SetActive(false);
             }
@@ -69,8 +124,9 @@ public class TextManeger : MonoBehaviour
         nodeNum++;
         if (nodeNum < textNodes.Length)
         {
-            thisName = textNodes[nodeNum].Name;
-            thisText = textNodes[nodeNum].Text;
+            name = textNodes[nodeNum].Name;
+            text = textNodes[nodeNum].Text;
+            isWriting = true;
         }
         else
         {
@@ -83,14 +139,15 @@ public class TextManeger : MonoBehaviour
     public void SetNodesText(TextNode[] l_textNodes)
     {
         canDoNextNode = false;
-        StartCoroutine(CanDoNextNode());
+        //StartCoroutine(CanDoNextNode());
         nextButton.SetActive(false);
         nodeNum = 0;
         textNodes = l_textNodes;
         isTalking = true;
         textGO.SetActive(true);
-        thisName = textNodes[nodeNum].Name;
-        thisText = textNodes[nodeNum].Text;
+        name = textNodes[nodeNum].Name;
+        text = textNodes[nodeNum].Text;
+        isWriting = true;
     }
 
 
