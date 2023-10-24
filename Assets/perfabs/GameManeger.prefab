@@ -155,6 +155,7 @@ MonoBehaviour:
   textTMP: {fileID: 2419849719933072175}
   isTalking: 0
   timeContinuar: 2
+  saltarTiempoEnUnity: 1
 --- !u!1 &2199524334182495179
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,6 +968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4839c87ac0b3fd34eb880f65ec173b27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numScene: 0
   TM: {fileID: 8329810188504844236}
   EperParlar: {fileID: 2199524334182495179}
   EperInteractuar: {fileID: 2550724600350120304}
@@ -1109,7 +1111,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3326780932153098707
 RectTransform:
   m_ObjectHideFlags: 0
