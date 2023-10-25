@@ -14,7 +14,7 @@ public class NPCTalk : MonoBehaviour
     public float DistanceToTalk = 1.5f;
     bool playerTrigger;
     bool noMoreTalk = false;
-
+    bool talkFirstTime = true;
     public bool activeTalk = false;
 
     void Start()
@@ -29,11 +29,13 @@ public class NPCTalk : MonoBehaviour
     {
         if (Text1.Length != 0)
         {
-            if (Vector3.Distance(transform.position, player.transform.position) <= DistanceToTalk)
+
+            if (Vector3.Distance(transform.position, player.transform.position) <= DistanceToTalk && !playerTrigger)
             {
                 playerTrigger = true;
             }
-            else
+
+            if (Vector3.Distance(transform.position, player.transform.position) > DistanceToTalk && playerTrigger)
             {
                 playerTrigger = false;
                 GM.EperParlar.SetActive(false);
@@ -47,6 +49,11 @@ public class NPCTalk : MonoBehaviour
 
             if ((Input.GetKeyUp(KeyCode.E) && !GM.TM.isTalking && playerTrigger && !noMoreTalk) || activeTalk)
             {
+                if (talkFirstTime)
+                {
+                    GM.AddPersonasHabladas();
+                    talkFirstTime = false;
+                }
                 activeTalk = false;
                 GM.TM.SetNodesText(Text);
                 GM.EperParlar.SetActive(false);

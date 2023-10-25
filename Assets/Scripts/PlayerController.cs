@@ -37,6 +37,11 @@ public class PlayerController : MonoBehaviour
         {
             Move();
         }
+        else
+        {
+            animator.SetInteger("Move", 0);
+            animator.SetInteger("arms", 3);
+        }
 
     }
 

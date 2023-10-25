@@ -106,10 +106,6 @@ public class TextManeger : MonoBehaviour
             textGO.SetActive(false);
         }
 
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            SetNodesText(textNodes);
-        }
     }
 
     IEnumerator CanDoNextNode()
