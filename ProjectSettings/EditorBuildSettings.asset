@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Game/3_Poble.unity
+    guid: ddce3b84a8137fc408a0aa7742e5df46
+  - enabled: 1
+    path: Assets/Scenes/Game/4_HouseCurandero.unity
+    guid: ff5a29899287f5b43b0bbff1c3eac81a
+  - enabled: 1
+    path: Assets/Scenes/Game/2_Hospital.unity
+    guid: d6def1394b00e9c4dae162f7aaedc53f
+  - enabled: 1
+    path: Assets/Scenes/Game/1_House.unity
+    guid: 2ccd5ad230ef45d44a796a70bb83528c
   m_configObjects: {}
