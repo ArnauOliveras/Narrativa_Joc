@@ -9,6 +9,21 @@ public class GameManeger : MonoBehaviour
     public TextManeger TM;
     public GameObject EperParlar;
     public GameObject EperInteractuar;
+    public GameObject player;
+    public GameObject camera;
+    public GameObject UI;
+
+
+    [Header("Transition")]
+    public Animator transition;
+    public GameObject transitionGO;
+
+
+    [Header("Scene1")]
+    public GameObject mainMenu;
+    public GameObject mainMenuButtons;
+    public GameObject creditos;
+    public GameObject NPCS1;
 
     [Header("Scene3")]
 
@@ -24,6 +39,12 @@ public class GameManeger : MonoBehaviour
 
     private void Start()
     {
+        transitionGO.SetActive(true);
+
+        if (numScene == 1)
+        {
+
+        }
         if (numScene == 3)
         {
             TM.SetNodesText(TextInit3);
@@ -32,6 +53,11 @@ public class GameManeger : MonoBehaviour
 
     private void Update()
     {
+        if (numScene == 1)
+        {
+
+        }
+
         if (numScene == 3)
         {
             missNum.text = personasHabladas + "/" + personasPorHablar;
@@ -53,8 +79,43 @@ public class GameManeger : MonoBehaviour
         missNum.gameObject.SetActive(false);
         missTitle.text = "Dirijete al bosque que está al lado de la médica.";
     }
+
+    IEnumerator StartGame()
+    {
+        yield return new WaitForSeconds(1.1f);
+        player.SetActive(true);
+        UI.SetActive(true);
+        NPCS1.SetActive(true);
+        camera.GetComponent<CameraController>().enabled = true;
+        mainMenu.SetActive(false);
+
+    }
     public void AddPersonasHabladas()
     {
         personasHabladas++;
     }
+
+    public void StartMM()
+    {
+        mainMenuButtons.SetActive(false);
+        transition.SetTrigger("s1_1");
+        StartCoroutine(StartGame());
+
+    }
+
+    public void CreditosMM()
+    {
+        creditos.SetActive(true);
+        mainMenuButtons.SetActive(false);
+    }
+    public void BackMM()
+    {
+        creditos.SetActive(false);
+        mainMenuButtons.SetActive(true);
+    }
+    public void QuitMM()
+    {
+        Application.Quit();
+    }
+
 }

@@ -205,6 +205,7 @@ RectTransform:
   - {fileID: 1348626614811390765}
   - {fileID: 8980012188858586997}
   - {fileID: 4416065431373169788}
+  - {fileID: 2792407230617931841}
   m_Father: {fileID: 7876066704858991617}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -405,6 +406,104 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &2269949326719251046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2792407230617931841}
+  - component: {fileID: 5007429871089517540}
+  - component: {fileID: 5613347367525673109}
+  - component: {fileID: 6303622697132686758}
+  m_Layer: 5
+  m_Name: Transition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2792407230617931841
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2269949326719251046}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6611309845857645601}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0025024, y: -0.000030518}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &5007429871089517540
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2269949326719251046}
+  m_CullTransparentMesh: 1
+--- !u!114 &5613347367525673109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2269949326719251046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!95 &6303622697132686758
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2269949326719251046}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 05946e30271a15b4c81abce6d0eac416, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2550724600350120304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,6 +1455,15 @@ MonoBehaviour:
   TM: {fileID: 8329810188504844236}
   EperParlar: {fileID: 2199524334182495179}
   EperInteractuar: {fileID: 2550724600350120304}
+  player: {fileID: 8543301183811557347}
+  camera: {fileID: 6508469411994842441}
+  UI: {fileID: 6665295723363879481}
+  transition: {fileID: 6303622697132686758}
+  transitionGO: {fileID: 2269949326719251046}
+  mainMenu: {fileID: 0}
+  mainMenuButtons: {fileID: 0}
+  creditos: {fileID: 0}
+  NPCS1: {fileID: 0}
   TextInit3:
   - Name: Jan
     Text: "Pues nada... ya estar\xEDamos en el pueblo... espero encontrar f\xE1cil
@@ -1369,6 +1477,7 @@ MonoBehaviour:
     Text: "Probar\xE9 de ir al bosque a ver si encuentro algo. Creo que la entrada
       al bosque est\xE1 al lado de donde he hablado con la m\xE9dica."
   missNum: {fileID: 1098552789483557515}
+  missTitle: {fileID: 0}
   GoToForest: {fileID: 0}
 --- !u!1 &6665295723363879481
 GameObject:
@@ -2283,6 +2392,12 @@ Transform:
 --- !u!4 &4810978044930627572 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1123550051981646473, guid: 066b9035b24027d409065149bf09ed1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 5571975126124580221}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8543301183811557347 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4313400550586899102, guid: 066b9035b24027d409065149bf09ed1b,
     type: 3}
   m_PrefabInstance: {fileID: 5571975126124580221}
   m_PrefabAsset: {fileID: 0}

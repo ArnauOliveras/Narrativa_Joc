@@ -31,6 +31,11 @@ public class PlayerController : MonoBehaviour
         GM = GameObject.FindGameObjectWithTag("GameManeger").GetComponent<GameManeger>();
     }
 
+    private void OnEnable()
+    {
+        GM = GameObject.FindGameObjectWithTag("GameManeger").GetComponent<GameManeger>();
+    }
+
     void Update()
     {
         if (!GM.TM.isTalking)

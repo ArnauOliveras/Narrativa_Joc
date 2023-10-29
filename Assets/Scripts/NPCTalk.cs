@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NPCTalk : MonoBehaviour
 {
-    GameObject player;
+    public GameObject player;
     GameManeger GM;
     public TextNode[] Text1;
     [Header("Posar el segon text en cas de tenir una segona comber, sino deixar a 0")]
