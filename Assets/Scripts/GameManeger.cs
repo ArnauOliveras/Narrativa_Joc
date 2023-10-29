@@ -24,6 +24,7 @@ public class GameManeger : MonoBehaviour
     public GameObject mainMenuButtons;
     public GameObject creditos;
     public GameObject NPCS1;
+    public TextNode[] TextInit1;
 
     [Header("Scene3")]
 
@@ -88,7 +89,8 @@ public class GameManeger : MonoBehaviour
         NPCS1.SetActive(true);
         camera.GetComponent<CameraController>().enabled = true;
         mainMenu.SetActive(false);
-
+        yield return new WaitForSeconds(1f);
+        TM.SetNodesText(TextInit1);
     }
     public void AddPersonasHabladas()
     {
