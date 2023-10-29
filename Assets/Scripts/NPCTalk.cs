@@ -17,6 +17,7 @@ public class NPCTalk : MonoBehaviour
     bool talkFirstTime = true;
     public bool activeTalk = false;
     public bool interectuar = false;
+    public bool addPersonasHabladas = true;
 
     void Start()
     {
@@ -66,7 +67,10 @@ public class NPCTalk : MonoBehaviour
             {
                 if (talkFirstTime)
                 {
-                    GM.AddPersonasHabladas();
+                    if (addPersonasHabladas)
+                    {
+                        GM.AddPersonasHabladas();
+                    }
                     talkFirstTime = false;
                 }
                 activeTalk = false;

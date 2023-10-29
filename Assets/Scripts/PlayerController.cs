@@ -92,13 +92,10 @@ public class PlayerController : MonoBehaviour
         //}
 
 
-#if UNITY_EDITOR
-
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift) && GM.SePuedeCorrer)
         {
             _movementSpeed = runSpeed;
         }
-#endif
 
 
         _movement = _movement * _movementSpeed * Time.deltaTime;
@@ -116,7 +113,7 @@ public class PlayerController : MonoBehaviour
         }
         else { onGround = false; }
 
-        if (_movementSpeed > 0.0f)
+        if (_movementSpeed > 0.0f && new Vector3(_movement.x, 0, _movement.z)  != Vector3.zero)
         {
             if (_movementSpeed == walkSpeed)
             {

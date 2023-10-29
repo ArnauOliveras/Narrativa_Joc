@@ -15,7 +15,10 @@ public class GameManeger : MonoBehaviour
     public GameObject camera;
     public GameObject UI;
     int personasHabladas = 0;
-
+    public GameObject playerMesh;
+    public PlayerController playerController;
+    public bool SePuedeCorrer = false;
+    public GameObject shiftParaCorrer;
 
     [Header("Transition")]
     public Animator transition;
@@ -50,11 +53,23 @@ public class GameManeger : MonoBehaviour
     public TextNode[] TextInit3;
     public TextNode[] TextGoToForest3;
     bool talkS3 = false;
+    bool starts4shift = true;
 
     public TextMeshProUGUI missNum;
     public TextMeshProUGUI missTitle;
     public GameObject GoToForest;
     int personasPorHablar = 6;
+
+    [Header("Scene4")]
+    public TextNode[] TextInit4;
+    public TextNode[] TextInit4_2;
+    public TextNode[] TextWithCuranderoS4;
+    public GameObject bedPlayer;
+    public GameObject sitPlayer;
+    bool starts4 = true;
+    bool nsS4 = true;
+    public Transform PosPlayerSitS4;
+
 
     private void Start()
     {
@@ -64,33 +79,92 @@ public class GameManeger : MonoBehaviour
         {
             TM.SetNodesText(TextInit2);
             personasHabladas++;
+            Cursor.lockState = CursorLockMode.Locked;
 
         }
         if (numScene == 3)
         {
             TM.SetNodesText(TextInit3);
         }
+        if (numScene == 4)
+        {
+            playerController.stop = true;
+            StartCoroutine(StartS4());
+            transition.SetTrigger("s4");
+        }
     }
-
+    IEnumerator ShiftParaCorrer()
+    {
+        shiftParaCorrer.SetActive(true);
+        yield return new WaitForSeconds(10);
+        shiftParaCorrer.SetActive(false);
+    }
     private void Update()
     {
         if (numScene == 1)
         {
             S1Updete();
         }
-        
+
         if (numScene == 2)
         {
             S2Updete();
-            Cursor.lockState = CursorLockMode.Locked;
+
         }
 
         if (numScene == 3)
         {
             S3Updete();
         }
+        if (numScene == 4)
+        {
+            S4Updete();
+        }
     }
 
+    private void S4Updete()
+    {
+        if (TM.isTalking == false && personasHabladas == 1 && starts4)
+        {
+            starts4 = false;
+            transition.SetTrigger("s4");
+            StartCoroutine(bedS4());
+        }
+
+        if (TM.isTalking == false && personasHabladas == 2 && nsS4)
+        {
+            nsS4 = false;
+            transition.SetTrigger("s4");
+            StartCoroutine(sitS4());
+            playerController.stop = true;
+        }
+    }
+    IEnumerator StartS4()
+    {
+        yield return new WaitForSeconds(6);
+        TM.SetNodesText(TextInit4);
+        personasHabladas++;
+    }
+
+    IEnumerator bedS4()
+    {
+        yield return new WaitForSeconds(1.1f);
+        bedPlayer.SetActive(false);
+        playerMesh.SetActive(true);
+        playerController.stop = false;
+        yield return new WaitForSeconds(1f);
+        TM.SetNodesText(TextInit4_2);
+    }
+
+    IEnumerator sitS4()
+    {
+        yield return new WaitForSeconds(1.1f);
+        sitPlayer.SetActive(true);
+        playerMesh.SetActive(false);
+        player.transform.position = PosPlayerSitS4.position;
+        yield return new WaitForSeconds(1);
+        TM.SetNodesText(TextWithCuranderoS4);
+    }
     private void S2Updete()
     {
         if (TM.isTalking == false && personasHabladas == 1 && endS2)
@@ -127,6 +201,11 @@ public class GameManeger : MonoBehaviour
                 talkS3 = true;
                 StartCoroutine(GoToForestS3());
             }
+        }
+        if (TM.isTalking == false &&  starts4shift)
+        {
+            starts4shift = false;
+            StartCoroutine(ShiftParaCorrer());
         }
     }
 
@@ -179,7 +258,7 @@ public class GameManeger : MonoBehaviour
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene("2_Hospital");
     }
-    
+
     IEnumerator ReadCartaS1()
     {
         yield return new WaitForSeconds(1);
