@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     float coyoteTimeTimer;
     public float coyoteTime = 0.2f;
     bool onGround = true;
+    public bool stop = false;
 
     private void Start()
     {
@@ -38,7 +39,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (!GM.TM.isTalking)
+
+        if (!GM.TM.isTalking && !stop)
         {
             Move();
         }
