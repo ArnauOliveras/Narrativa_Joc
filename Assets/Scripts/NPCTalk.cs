@@ -16,6 +16,7 @@ public class NPCTalk : MonoBehaviour
     bool noMoreTalk = false;
     bool talkFirstTime = true;
     public bool activeTalk = false;
+    public bool interectuar = false;
 
     void Start()
     {
@@ -38,12 +39,26 @@ public class NPCTalk : MonoBehaviour
             if (Vector3.Distance(transform.position, player.transform.position) > DistanceToTalk && playerTrigger)
             {
                 playerTrigger = false;
-                GM.EperParlar.SetActive(false);
+                if (interectuar)
+                {
+                    GM.EperInteractuar.SetActive(false);
+                }
+                else
+                {
+                    GM.EperParlar.SetActive(false);
+                }
             }
 
             if (playerTrigger && !GM.TM.isTalking && !noMoreTalk)
             {
-                GM.EperParlar.SetActive(true);
+                if (interectuar)
+                {
+                    GM.EperInteractuar.SetActive(true);
+                }
+                else
+                {
+                    GM.EperParlar.SetActive(true);
+                }
             }
 
 
@@ -56,7 +71,14 @@ public class NPCTalk : MonoBehaviour
                 }
                 activeTalk = false;
                 GM.TM.SetNodesText(Text);
-                GM.EperParlar.SetActive(false);
+                if (interectuar)
+                {
+                    GM.EperInteractuar.SetActive(false);
+                }
+                else
+                {
+                    GM.EperParlar.SetActive(false);
+                }
                 if (Text2.Length == 0)
                 {
                     if (repeatText1)
