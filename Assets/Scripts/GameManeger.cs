@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -38,6 +39,12 @@ public class GameManeger : MonoBehaviour
     public NPCTalk textNPCS1_3;
     public GameObject Carta;
 
+    [Header("Scene2")]
+    public TextNode[] TextInit2;
+    public TextNode[] TextEnd2;
+    bool endS2 = true;
+    bool endS2_2 = true;
+
     [Header("Scene3")]
 
     public TextNode[] TextInit3;
@@ -53,14 +60,15 @@ public class GameManeger : MonoBehaviour
     {
         transitionGO.SetActive(true);
 
-        if (numScene == 1)
+        if (numScene == 2)
         {
+            TM.SetNodesText(TextInit2);
+            personasHabladas++;
 
         }
         if (numScene == 3)
         {
             TM.SetNodesText(TextInit3);
-            
         }
     }
 
@@ -68,54 +76,96 @@ public class GameManeger : MonoBehaviour
     {
         if (numScene == 1)
         {
-            if (TM.isTalking == false && personasHabladas == 1 && activeEatS1)
-            {
-                activeEatS1 = false;
-                EatGM.SetActive(true);
-            }
-
-            if (TM.isTalking == false && personasHabladas == 2 && !activeEatS1)
-            {
-                textNPCS1_1.enabled = false;
-                textNPCS1_2.enabled = true;
-            }
-
-            if (TM.isTalking == false && personasHabladas == 3 && activeCartaS1)
-            {
-                activeCartaS1 = false;
-                Carta.SetActive(true);
-                StartCoroutine(ReadCartaS1());
-            }
-            
-            if (TM.isTalking == false && personasHabladas == 4 && deactiveCartaS1)
-            {
-                deactiveCartaS1 = false;
-                Carta.SetActive(false);
-                textNPCS1_2.enabled = false;
-                textNPCS1_3.enabled = true;
-            }
-            if (TM.isTalking == false && personasHabladas == 5 && endS1)
-            {
-                endS1 = false;
-                transition.SetTrigger("s1_2");
-                StartCoroutine(EndS1());
-            }
+            S1Updete();
+        }
+        
+        if (numScene == 2)
+        {
+            S2Updete();
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
         if (numScene == 3)
         {
-            missNum.text = personasHabladas + "/" + personasPorHablar;
-            if (personasPorHablar == personasHabladas)
+            S3Updete();
+        }
+    }
+
+    private void S2Updete()
+    {
+        if (TM.isTalking == false && personasHabladas == 1 && endS2)
+        {
+            endS2 = false;
+            transition.SetTrigger("s2");
+            StartCoroutine(EndS2());
+        }
+        if (TM.isTalking == false && personasHabladas == 2 && endS2_2)
+        {
+            endS2_2 = false;
+            StartCoroutine(EndS2_2());
+        }
+    }
+    IEnumerator EndS2()
+    {
+        yield return new WaitForSeconds(2);
+        TM.SetNodesText(TextEnd2);
+        personasHabladas++;
+    }
+    IEnumerator EndS2_2()
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("3_Poble");
+    }
+    private void S3Updete()
+    {
+        missNum.text = personasHabladas + "/" + personasPorHablar;
+        if (personasPorHablar == personasHabladas)
+        {
+            GoToForest.SetActive(false);
+            if (TM.isTalking == false && !talkS3)
             {
-                GoToForest.SetActive(false);
-                if (TM.isTalking == false && !talkS3)
-                {
-                    talkS3 = true;
-                    StartCoroutine(GoToForestS3());
-                }
+                talkS3 = true;
+                StartCoroutine(GoToForestS3());
             }
         }
     }
+
+    private void S1Updete()
+    {
+        if (TM.isTalking == false && personasHabladas == 1 && activeEatS1)
+        {
+            activeEatS1 = false;
+            EatGM.SetActive(true);
+        }
+
+        if (TM.isTalking == false && personasHabladas == 2 && !activeEatS1)
+        {
+            textNPCS1_1.enabled = false;
+            textNPCS1_2.enabled = true;
+        }
+
+        if (TM.isTalking == false && personasHabladas == 3 && activeCartaS1)
+        {
+            activeCartaS1 = false;
+            Carta.SetActive(true);
+            StartCoroutine(ReadCartaS1());
+        }
+
+        if (TM.isTalking == false && personasHabladas == 4 && deactiveCartaS1)
+        {
+            deactiveCartaS1 = false;
+            Carta.SetActive(false);
+            textNPCS1_2.enabled = false;
+            textNPCS1_3.enabled = true;
+        }
+        if (TM.isTalking == false && personasHabladas == 5 && endS1)
+        {
+            endS1 = false;
+            transition.SetTrigger("s1_2");
+            StartCoroutine(EndS1());
+        }
+    }
+
     IEnumerator GoToForestS3()
     {
         yield return new WaitForSeconds(3);

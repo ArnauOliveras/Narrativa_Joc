@@ -201,11 +201,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2792407230617931841}
   - {fileID: 3738731635674844411}
   - {fileID: 1348626614811390765}
   - {fileID: 8980012188858586997}
   - {fileID: 4416065431373169788}
-  - {fileID: 2792407230617931841}
   m_Father: {fileID: 7876066704858991617}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -306,7 +306,7 @@ Transform:
   m_Children:
   - {fileID: 3326780932153098707}
   m_Father: {fileID: 6611309845857645601}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8329810188504844236
 MonoBehaviour:
@@ -361,7 +361,7 @@ RectTransform:
   m_Children:
   - {fileID: 4546874181075830210}
   m_Father: {fileID: 6611309845857645601}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -438,7 +438,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6611309845857645601}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -536,7 +536,7 @@ RectTransform:
   m_Children:
   - {fileID: 454516025347998245}
   m_Father: {fileID: 6611309845857645601}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1464,6 +1464,15 @@ MonoBehaviour:
   mainMenuButtons: {fileID: 0}
   creditos: {fileID: 0}
   NPCS1: {fileID: 0}
+  TextInit1: []
+  TextCarta1: []
+  EatGM: {fileID: 0}
+  textNPCS1_1: {fileID: 0}
+  textNPCS1_2: {fileID: 0}
+  textNPCS1_3: {fileID: 0}
+  Carta: {fileID: 0}
+  TextInit2: []
+  TextEnd2: []
   TextInit3:
   - Name: Jan
     Text: "Pues nada... ya estar\xEDamos en el pueblo... espero encontrar f\xE1cil
@@ -1511,7 +1520,7 @@ RectTransform:
   - {fileID: 6670044367586364728}
   - {fileID: 4301867630387087941}
   m_Father: {fileID: 6611309845857645601}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
