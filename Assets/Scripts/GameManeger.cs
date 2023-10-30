@@ -68,8 +68,17 @@ public class GameManeger : MonoBehaviour
     public GameObject sitPlayer;
     bool starts4 = true;
     bool nsS4 = true;
+    bool nssdS4 = true;
     public Transform PosPlayerSitS4;
 
+    [Header("Scene5")]
+    int flowers = 0;
+    int youNeedFlowers = 10;
+    bool pillados5 = false;
+    public TextNode[] TextPilladoMinigameS5;
+    public Transform posResetPlayerS5;
+    public GameObject doorMiniS5;
+    public GameObject StartMiniS5;
 
     private void Start()
     {
@@ -93,7 +102,7 @@ public class GameManeger : MonoBehaviour
             transition.SetTrigger("s4");
         }
     }
-    IEnumerator ShiftParaCorrer()
+    public IEnumerator ShiftParaCorrer()
     {
         shiftParaCorrer.SetActive(true);
         yield return new WaitForSeconds(10);
@@ -101,6 +110,7 @@ public class GameManeger : MonoBehaviour
     }
     private void Update()
     {
+        print(personasHabladas);
         if (numScene == 1)
         {
             S1Updete();
@@ -120,8 +130,58 @@ public class GameManeger : MonoBehaviour
         {
             S4Updete();
         }
+        if (numScene == 5)
+        {
+            S5Updete();
+        }
     }
 
+    private void S5Updete()
+    {
+        if (TM.isTalking == false && pillados5)
+        {
+            pillados5 = false;
+            StartCoroutine(RestartMinigameGlowers());
+        }
+        if (youNeedFlowers == flowers)
+        {
+
+        }
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            AddFlowers();
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            RessetMinigameFlowers();
+        }
+    }
+
+    public void AddFlowers()
+    {
+        flowers++;
+        missNum.text = flowers + "/10";
+    }
+    public void RessetMinigameFlowers()
+    {
+        TM.SetNodesText(TextPilladoMinigameS5);
+        pillados5 = true;
+
+    }
+    IEnumerator RestartMinigameGlowers()
+    {
+        transition.SetTrigger("s5_f");
+        yield return new WaitForSeconds(1.1f);
+        player.GetComponent<CharacterController>().enabled = false;
+        player.transform.position = posResetPlayerS5.position;
+        flowers = 0;
+        missNum.text = flowers + "/10";
+        StartMiniS5.SetActive(true);
+        doorMiniS5.SetActive(false);
+        player.GetComponent<CharacterController>().enabled = true;
+        // Resetear flores aca ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    }
     private void S4Updete()
     {
         if (TM.isTalking == false && personasHabladas == 1 && starts4)
@@ -137,6 +197,13 @@ public class GameManeger : MonoBehaviour
             transition.SetTrigger("s4");
             StartCoroutine(sitS4());
             playerController.stop = true;
+        }
+        
+        if (TM.isTalking == false && personasHabladas == 3 && nssdS4)
+        {
+            nssdS4 = false;
+            transition.SetTrigger("s4");
+            StartCoroutine(EndS4());
         }
     }
     IEnumerator StartS4()
@@ -161,10 +228,20 @@ public class GameManeger : MonoBehaviour
         yield return new WaitForSeconds(1.1f);
         sitPlayer.SetActive(true);
         playerMesh.SetActive(false);
+        player.GetComponent<CharacterController>().enabled = false;
         player.transform.position = PosPlayerSitS4.position;
+        player.GetComponent<CharacterController>().enabled = true;
         yield return new WaitForSeconds(1);
         TM.SetNodesText(TextWithCuranderoS4);
+        personasHabladas++;
     }
+
+    IEnumerator EndS4()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("5_Poble");
+    }
+
     private void S2Updete()
     {
         if (TM.isTalking == false && personasHabladas == 1 && endS2)
