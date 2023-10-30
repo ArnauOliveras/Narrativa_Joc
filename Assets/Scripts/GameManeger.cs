@@ -289,7 +289,7 @@ public class GameManeger : MonoBehaviour
     public void StartMM()
     {
         mainMenuButtons.SetActive(false);
-        
+        Cursor.lockState = CursorLockMode.Locked;
         StartCoroutine(StartGame());
 
     }
