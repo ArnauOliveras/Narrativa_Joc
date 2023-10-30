@@ -1071,38 +1071,43 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextInit2.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextEnd2.Array.data[0].Name
-      value: Jan
+      value: ' '
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextEnd2.Array.data[0].Text
-      value: "Pues nada... ya estar\xEDamos en el pueblo... espero encontrar f\xE1cil
-        al curandero."
+      value: 'Al salir del hospital, Jan se encuentra frustrado y hundido. Jan vuelve
+        a casa con su madre y prepara la comida. Mientras cocina levanta la tapa
+        de la basura y ve en el fondo la publicidad del curandero. '
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextEnd2.Array.data[1].Name
-      value: Jan
+      value: ' '
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextEnd2.Array.data[1].Text
-      value: "Hablar\xE9 con la gente a ver si saben algo y me pueden ayudar a encontrarlo."
+      value: "Llevado por la desesperaci\xF3n, decide recoger el papel como \xFAltimo
+        recurso. Pese a que no conf\xEDa para nada en ese panfleto, Jan coge un autob\xFAs
+        con destino al pueblo del supuesto curandero. "
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextInit2.Array.data[0].Name
-      value: Metge
+      value: "M\xE9dico"
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextInit2.Array.data[0].Text
-      value: Hola bon dia
+      value: "Lo siento mucho Jan, pero tras los \xFAltimos an\xE1lisis, seguimos
+        sin poder diagnosticar tu enfermedad. Seguiremos haciendo pruebas en busca
+        de un remedio."
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -1112,17 +1117,39 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextInit2.Array.data[1].Text
-      value: Bon dia
+      value: "Estoy harto! C\xF3mo puede ser que tras a\xF1os de visitas m\xE9dicas,
+        sig\xE1is sin saber qu\xE9 es lo que me pasa?"
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextInit2.Array.data[2].Name
-      value: Mare Jan
+      value: Madre
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextInit2.Array.data[2].Text
-      value: Bon dia
+      value: "Tranquilo hijo, todo se solucionar\xE1."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextInit2.Array.data[3].Name
+      value: "M\xE9dico"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextInit2.Array.data[3].Text
+      value: "Lo cierto es que ning\xFAn m\xE9dico sabe de ning\xFAn caso similar
+        al tuyo. Hacemos lo que podemos, pero no vemos la luz al final del t\xFAnel\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextInit2.Array.data[4].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextInit2.Array.data[4].Text
+      value: "Gracias por nada. Vay\xE1monos mam\xE1."
       objectReference: {fileID: 0}
     - target: {fileID: 7876066704858991617, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
