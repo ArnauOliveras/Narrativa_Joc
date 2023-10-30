@@ -34,7 +34,8 @@ public class TextManeger : MonoBehaviour
     }
 
     int indice = 0;
-    bool lent = false;
+    int lent = 0;
+    public int framesXLetra = 4;
 
     void Update()
     {
@@ -45,8 +46,9 @@ public class TextManeger : MonoBehaviour
             List<char> listaDeLetrasNombre = new List<char>(name.ToCharArray());
             List<char> listaDeLetrasTexto = new List<char>(text.ToCharArray());
 
-            if (lent)
+            if (lent == framesXLetra)
             {
+                lent = 0;
                 if (listaDeLetrasNombre.Count > indice)
                 {
                     thisName = thisName + listaDeLetrasNombre[indice];
@@ -66,11 +68,10 @@ public class TextManeger : MonoBehaviour
                 }
 
                 indice++;
-                lent = false;
             }
             else
             {
-                lent = true;
+                lent++;
             }
 
 

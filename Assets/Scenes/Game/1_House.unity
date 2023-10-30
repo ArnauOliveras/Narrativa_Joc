@@ -1217,6 +1217,7 @@ MonoBehaviour:
   DistanceToTalk: 1.5
   activeTalk: 0
   interectuar: 1
+  addPersonasHabladas: 1
 --- !u!4 &1056193216
 Transform:
   m_ObjectHideFlags: 0
@@ -1845,6 +1846,7 @@ MonoBehaviour:
   DistanceToTalk: 1.5
   activeTalk: 0
   interectuar: 0
+  addPersonasHabladas: 1
 --- !u!114 &1453228757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1868,6 +1870,7 @@ MonoBehaviour:
   DistanceToTalk: 1.5
   activeTalk: 0
   interectuar: 0
+  addPersonasHabladas: 1
 --- !u!1 &1458085251
 GameObject:
   m_ObjectHideFlags: 0
