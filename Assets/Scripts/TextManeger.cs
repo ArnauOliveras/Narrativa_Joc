@@ -29,8 +29,10 @@ public class TextManeger : MonoBehaviour
         if (saltarTiempoEnUnity)
         {
             timeContinuar = 0;
+            framesXLetra = 1;
         }
 #endif
+        lent = framesXLetra;
     }
 
     int indice = 0;
@@ -41,6 +43,14 @@ public class TextManeger : MonoBehaviour
     {
         if (isWriting)
         {
+            if (name == " ")
+            {
+                textTMP.fontStyle = (FontStyles)FontStyle.Italic; 
+            }
+            else
+            {
+                textTMP.fontStyle = (FontStyles)FontStyle.Normal;
+            }
             bool canContinueName = false;
             bool canContinueText = false;
             List<char> listaDeLetrasNombre = new List<char>(name.ToCharArray());
@@ -87,6 +97,7 @@ public class TextManeger : MonoBehaviour
                 thisText = "";
                 nextButton.SetActive(true);
                 isWriting = false;
+                lent = framesXLetra;
             }
 
 

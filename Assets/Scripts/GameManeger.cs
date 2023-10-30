@@ -233,9 +233,8 @@ public class GameManeger : MonoBehaviour
         if (TM.isTalking == false && personasHabladas == 4 && deactiveCartaS1)
         {
             deactiveCartaS1 = false;
-            Carta.SetActive(false);
-            textNPCS1_2.enabled = false;
-            textNPCS1_3.enabled = true;
+            
+            StartCoroutine(EndS1());
         }
         if (TM.isTalking == false && personasHabladas == 5 && endS1)
         {
@@ -255,6 +254,9 @@ public class GameManeger : MonoBehaviour
 
     IEnumerator EndS1()
     {
+        yield return new WaitForSeconds(2);
+        Carta.SetActive(false);
+        transition.SetTrigger("s1_2");
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene("2_Hospital");
     }
@@ -268,6 +270,8 @@ public class GameManeger : MonoBehaviour
 
     IEnumerator StartGame()
     {
+        yield return new WaitForSeconds(2f);
+        transition.SetTrigger("s1_1");
         yield return new WaitForSeconds(1.1f);
         player.SetActive(true);
         UI.SetActive(true);
@@ -285,7 +289,7 @@ public class GameManeger : MonoBehaviour
     public void StartMM()
     {
         mainMenuButtons.SetActive(false);
-        transition.SetTrigger("s1_1");
+        
         StartCoroutine(StartGame());
 
     }

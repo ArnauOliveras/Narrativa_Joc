@@ -1206,12 +1206,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1747185163}
   Text1:
-  - Name: Jan
-    Text: A veure que hi haaa....
-  - Name: Jan
-    Text: Tomaa un entrecot!
-  - Name: Narrador
-    Text: Explica la historia den jan
+  - Name: ' '
+    Text: "Desde hace varios a\xF1os, Jan padece una enfermedad desconocida que provoca
+      que pierda el conocimiento de manera intermitente. "
+  - Name: ' '
+    Text: "La enfermedad no tiene efectos secundarios ni perjudiciales para la salud
+      como tal. Sin embargo hay veces que al despertar, Jan no sabe si sigue desmayado
+      y esta viendo una ilusi\xF3n o si realmente se ha despertado."
+  - Name: ' '
+    Text: "Esto provoca que puntualmente vea cosas que realmente no est\xE1n sucediendo."
+  - Name: ' '
+    Text: "Jan ha asistido al hospital varias veces en busca de un remedio que le
+      permita hacer vida corriente, pero tras varias investigaciones, los m\xE9dicos
+      han tirado la toalla. Catalogan el caso como un \u201Chechizo incurable\u201D."
   Text2: []
   repeatText1: 0
   DistanceToTalk: 1.5
@@ -1834,13 +1841,12 @@ MonoBehaviour:
   player: {fileID: 1747185163}
   Text1:
   - Name: Jan
-    Text: Ja he menjat
-  - Name: Mare Jan
-    Text: Molt be, pues nem...
-  - Name: Jan
-    Text: Vale.
-  - Name: Mare Jan
-    Text: Abans m'ha arribat una cartamolt rara, mira aixo
+    Text: "Ya estoy listo mam\xE1. Cuando quieras podemos irnos."
+  - Name: Madre
+    Text: Dame un segundo que reviso el correo y salimos.
+  - Name: Madre
+    Text: "Estoy harta de que nos manden publicidad! Para colmo solo dicen tonter\xEDas\u2026
+      Deshecha-lo a la papelera."
   Text2: []
   repeatText1: 0
   DistanceToTalk: 1.5
@@ -2397,6 +2403,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1286085308070017522, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: m_text
+      value: E para comer
+      objectReference: {fileID: 0}
     - target: {fileID: 1367578838204745375, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: m_Enabled
@@ -2410,6 +2421,11 @@ PrefabInstance:
     - target: {fileID: 2396625295044481474, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419849719933072175, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: m_fontStyle
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2670221074751917632, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
@@ -2493,6 +2509,11 @@ PrefabInstance:
       value: GameManeger
       objectReference: {fileID: 0}
     - target: {fileID: 6665295723363879481, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7014934750838057791, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2600,7 +2621,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextInit1.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -2615,7 +2636,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextInit1.Array.data[0].Text
-      value: Quin bon dia fa avui...
+      value: "\xA1Qu\xE9 bien he dormido hoy! Ojal\xE1 fuera as\xED todos los d\xEDas\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -2635,17 +2656,17 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextCarta1.Array.data[0].Text
-      value: "Quina carta m\xE9s misteriosa"
+      value: "Lo que hay que ver\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextCarta1.Array.data[1].Name
-      value: 'Jan '
+      value: Madre
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextCarta1.Array.data[1].Text
-      value: Me la guardo per si de cas
+      value: "Hijo vay\xE1monos que llegaremos tarde."
       objectReference: {fileID: 0}
     - target: {fileID: 7876066704858991617, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3134,7 +3155,7 @@ PrefabInstance:
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text1.Array.size
-      value: 9
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
@@ -3149,17 +3170,18 @@ PrefabInstance:
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text1.Array.data[0].Text
-      value: Bon dia mare...
+      value: "Buenos d\xEDas mam\xE1. "
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text1.Array.data[1].Name
-      value: Mare Jan
+      value: Madre
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text1.Array.data[1].Text
-      value: Bon dia Jan. Que tal has dormit?
+      value: "Buenos d\xEDas hijo. Recuerda que esta ma\xF1ana tenemos que ir al
+        m\xE9dico. A ver si finalmente te dicen que es lo que tienes."
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
@@ -3169,57 +3191,59 @@ PrefabInstance:
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text1.Array.data[2].Text
-      value: "B\xE9 mare, pero estic una mica preucupat."
+      value: "A ver si es verdad\u2026 la verdad que ya hace tiempo que perd\xED
+        la esperanza\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text1.Array.data[3].Name
-      value: Mare Jan
+      value: Madre
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text1.Array.data[3].Text
-      value: Que et passa?
+      value: Come algo antes de irnos que no sabemos el tiempo que nos pueden hacer
+        esperar hasta que te atiendan. He dejado comida en la nevera.
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text1.Array.data[4].Name
-      value: Jan
+      value: Madre
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text1.Array.data[4].Text
-      value: M'he notat una mica malament i marejat.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text1.Array.data[5].Name
-      value: Mare Jan
-      objectReference: {fileID: 0}
-    - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
-        type: 3}
-      propertyPath: Text1.Array.data[5].Text
-      value: Recorda que avui anem al metge, li podras preguntar.
-      objectReference: {fileID: 0}
-    - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
-        type: 3}
-      propertyPath: Text1.Array.data[6].Name
       value: Jan
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
+      propertyPath: Text1.Array.data[5].Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
+        type: 3}
+      propertyPath: Text1.Array.data[6].Name
+      value: Madre
+      objectReference: {fileID: 0}
+    - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
+        type: 3}
       propertyPath: Text1.Array.data[6].Text
-      value: Si, tambe li voldre preguntar unes altres coses
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text1.Array.data[7].Name
-      value: Mare Jan
+      value: Jan
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text1.Array.data[7].Text
-      value: Perfecte, menja algo que marxarem ja
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
@@ -3229,17 +3253,17 @@ PrefabInstance:
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text1.Array.data[8].Text
-      value: Vale mare...
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text2.Array.data[0].Name
-      value: Mare Jan
+      value: Madre
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text2.Array.data[0].Text
-      value: Ja has menjat?
+      value: "\xBFYa has comido?"
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
@@ -3254,12 +3278,13 @@ PrefabInstance:
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text2.Array.data[2].Name
-      value: Mare Jan
+      value: Madre
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text2.Array.data[2].Text
-      value: Espavila, que arribarem tard!
+      value: "\xBFY a qu\xE9 esperas? Al final llegaremos tarde... come algo de la
+        nevera."
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
