@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/5_Poble.unity
     guid: dccab753a48ef4d4cafbd6d93203a0f8
+  - enabled: 1
+    path: Assets/Scenes/Game/6_HouseCurandero.unity
+    guid: f66c607c92a587e40ad4ba6b32a7b3da
   m_configObjects: {}

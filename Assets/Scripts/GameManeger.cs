@@ -73,7 +73,7 @@ public class GameManeger : MonoBehaviour
 
     [Header("Scene5")]
     int flowers = 0;
-    int youNeedFlowers = 10;
+    int youNeedFlowers = 20;
     bool pillados5 = false;
     bool canBePilladoS5 = false;
     bool perseguirS5 = false;
@@ -90,11 +90,14 @@ public class GameManeger : MonoBehaviour
     public MinigameNoPuedeSalir puedeSalir;
     public GameObject salirPuebloS5;
     public Transform PosicionVecina;
+    public GameObject[] FlowersS5;
+    public Vecina viejaAgent;
+    public GameObject EndS5;
 
     private void Start()
     {
         transitionGO.SetActive(true);
-
+        
         if (numScene == 2)
         {
             TM.SetNodesText(TextInit2);
@@ -111,6 +114,10 @@ public class GameManeger : MonoBehaviour
             playerController.stop = true;
             StartCoroutine(StartS4());
             transition.SetTrigger("s4");
+        }
+        if (numScene == 5)
+        {
+            FlowersS5 = GameObject.FindGameObjectsWithTag("Flower");
         }
     }
     public IEnumerator ShiftParaCorrer()
@@ -155,7 +162,7 @@ public class GameManeger : MonoBehaviour
             StartCoroutine(RestartMinigameGlowers());
         }
 
-        if (youNeedFlowers == flowers && firstTimeSuperadoS5)
+        if (youNeedFlowers <= flowers && firstTimeSuperadoS5)
         {
             OpenDoorMinigameS5();
         }
@@ -170,14 +177,15 @@ public class GameManeger : MonoBehaviour
         if (Vector3.Distance(playerController.gameObject.transform.position, vecina.transform.position) <= distanseToCaught && canBePilladoS5 == false)
         {
             RessetMinigameFlowers();
+            viejaAgent.perseguir = false;
         }
 
         if (TM.isTalking == false && empezarPerseguirS5)
         {
             empezarPerseguirS5 = false;
-            print("Empieza a correr");
+            viejaAgent.perseguir = true;
         }
-
+#if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.X))
         {
             AddFlowers();
@@ -186,17 +194,19 @@ public class GameManeger : MonoBehaviour
         {
             RessetMinigameFlowers();
         }
+#endif
     }
 
 
 
     public void MinigameSuperado()
     {
-        if (youNeedFlowers == flowers && firstTimeSuperadoS5)
+        if (youNeedFlowers <= flowers && firstTimeSuperadoS5)
         {
             firstTimeSuperadoS5 = false;
             salirPuebloS5.SetActive(true);
             doorMiniS5.SetActive(true);
+            EndS5.SetActive(true);
         }
     }
 
@@ -208,7 +218,7 @@ public class GameManeger : MonoBehaviour
     public void AddFlowers()
     {
         flowers++;
-        missNum.text = flowers + "/10";
+        missNum.text = flowers + "/20";
     }
     public void RessetMinigameFlowers()
     {
@@ -224,7 +234,7 @@ public class GameManeger : MonoBehaviour
         player.GetComponent<CharacterController>().enabled = false;
         player.transform.position = posResetPlayerS5.position;
         flowers = 0;
-        missNum.text = flowers + "/10";
+        missNum.text = flowers + "/20";
         StartMiniS5.SetActive(true);
         doorMiniS5.SetActive(false);
         player.GetComponent<CharacterController>().enabled = true;
@@ -232,7 +242,11 @@ public class GameManeger : MonoBehaviour
         puedeSalir.firstTime = true;
         perseguirS5 = false;
         vecina.transform.position = PosicionVecina.position;
-        // Resetear flores aca ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        foreach(GameObject go in FlowersS5)
+        {
+            go.SetActive(true);
+        }
 
     }
     private void S4Updete()
