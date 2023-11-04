@@ -76,15 +76,20 @@ public class GameManeger : MonoBehaviour
     int youNeedFlowers = 10;
     bool pillados5 = false;
     bool canBePilladoS5 = false;
+    bool perseguirS5 = false;
     bool firstTimeSuperadoS5 = true;
+    bool empezarPerseguirS5 = false;
     public TextNode[] TextPilladoMinigameS5;
+    public TextNode[] TextEmpezarPerseguirS5;
     public Transform posResetPlayerS5;
     public GameObject doorMiniS5;
     public GameObject StartMiniS5;
     public GameObject vecina;
     public float distanseToCaught = 2f;
+    public float distanseToPerseguir = 10f;
     public MinigameNoPuedeSalir puedeSalir;
     public GameObject salirPuebloS5;
+    public Transform PosicionVecina;
 
     private void Start()
     {
@@ -155,12 +160,23 @@ public class GameManeger : MonoBehaviour
             OpenDoorMinigameS5();
         }
 
+        if (Vector3.Distance(playerController.gameObject.transform.position, vecina.transform.position) <= distanseToPerseguir && perseguirS5 == false)
+        {
+            perseguirS5 = true;
+            TM.SetNodesText(TextEmpezarPerseguirS5);
+            empezarPerseguirS5 = true;
+        }
 
         if (Vector3.Distance(playerController.gameObject.transform.position, vecina.transform.position) <= distanseToCaught && canBePilladoS5 == false)
         {
             RessetMinigameFlowers();
         }
 
+        if (TM.isTalking == false && empezarPerseguirS5)
+        {
+            empezarPerseguirS5 = false;
+            print("Empieza a correr");
+        }
 
         if (Input.GetKeyDown(KeyCode.X))
         {
@@ -214,6 +230,8 @@ public class GameManeger : MonoBehaviour
         player.GetComponent<CharacterController>().enabled = true;
         canBePilladoS5 = false;
         puedeSalir.firstTime = true;
+        perseguirS5 = false;
+        vecina.transform.position = PosicionVecina.position;
         // Resetear flores aca ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     }
