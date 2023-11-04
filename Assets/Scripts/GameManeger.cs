@@ -75,10 +75,16 @@ public class GameManeger : MonoBehaviour
     int flowers = 0;
     int youNeedFlowers = 10;
     bool pillados5 = false;
+    bool canBePilladoS5 = false;
+    bool firstTimeSuperadoS5 = true;
     public TextNode[] TextPilladoMinigameS5;
     public Transform posResetPlayerS5;
     public GameObject doorMiniS5;
     public GameObject StartMiniS5;
+    public GameObject vecina;
+    public float distanseToCaught = 2f;
+    public MinigameNoPuedeSalir puedeSalir;
+    public GameObject salirPuebloS5;
 
     private void Start()
     {
@@ -143,10 +149,19 @@ public class GameManeger : MonoBehaviour
             pillados5 = false;
             StartCoroutine(RestartMinigameGlowers());
         }
-        if (youNeedFlowers == flowers)
-        {
 
+        if (youNeedFlowers == flowers && firstTimeSuperadoS5)
+        {
+            OpenDoorMinigameS5();
         }
+
+
+        if (Vector3.Distance(playerController.gameObject.transform.position, vecina.transform.position) <= distanseToCaught && canBePilladoS5 == false)
+        {
+            RessetMinigameFlowers();
+        }
+
+
         if (Input.GetKeyDown(KeyCode.X))
         {
             AddFlowers();
@@ -155,6 +170,23 @@ public class GameManeger : MonoBehaviour
         {
             RessetMinigameFlowers();
         }
+    }
+
+
+
+    public void MinigameSuperado()
+    {
+        if (youNeedFlowers == flowers && firstTimeSuperadoS5)
+        {
+            firstTimeSuperadoS5 = false;
+            salirPuebloS5.SetActive(true);
+            doorMiniS5.SetActive(true);
+        }
+    }
+
+    private void OpenDoorMinigameS5()
+    {
+        doorMiniS5.SetActive(false);
     }
 
     public void AddFlowers()
@@ -166,6 +198,7 @@ public class GameManeger : MonoBehaviour
     {
         TM.SetNodesText(TextPilladoMinigameS5);
         pillados5 = true;
+        canBePilladoS5 = true;
 
     }
     IEnumerator RestartMinigameGlowers()
@@ -179,6 +212,8 @@ public class GameManeger : MonoBehaviour
         StartMiniS5.SetActive(true);
         doorMiniS5.SetActive(false);
         player.GetComponent<CharacterController>().enabled = true;
+        canBePilladoS5 = false;
+        puedeSalir.firstTime = true;
         // Resetear flores aca ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     }
@@ -198,7 +233,7 @@ public class GameManeger : MonoBehaviour
             StartCoroutine(sitS4());
             playerController.stop = true;
         }
-        
+
         if (TM.isTalking == false && personasHabladas == 3 && nssdS4)
         {
             nssdS4 = false;
@@ -279,7 +314,7 @@ public class GameManeger : MonoBehaviour
                 StartCoroutine(GoToForestS3());
             }
         }
-        if (TM.isTalking == false &&  starts4shift)
+        if (TM.isTalking == false && starts4shift)
         {
             starts4shift = false;
             StartCoroutine(ShiftParaCorrer());
@@ -310,7 +345,7 @@ public class GameManeger : MonoBehaviour
         if (TM.isTalking == false && personasHabladas == 4 && deactiveCartaS1)
         {
             deactiveCartaS1 = false;
-            
+
             StartCoroutine(EndS1());
         }
         if (TM.isTalking == false && personasHabladas == 5 && endS1)

@@ -6,7 +6,7 @@ public class MinigameNoPuedeSalir : MonoBehaviour
 {
     GameManeger GM;
     public GameObject Mensage;
-    bool firstTime = true;
+    public bool firstTime = true;
     private void Start()
     {
         GM = GameObject.FindGameObjectWithTag("GameManeger").GetComponent<GameManeger>();
