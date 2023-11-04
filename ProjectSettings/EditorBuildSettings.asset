@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/6_HouseCurandero.unity
     guid: f66c607c92a587e40ad4ba6b32a7b3da
+  - enabled: 1
+    path: Assets/Scenes/Game/7_Bosc.unity
+    guid: da3298ff2a8e15c418b7f8d8dccc8622
   m_configObjects: {}

@@ -94,6 +94,11 @@ public class GameManeger : MonoBehaviour
     public Vecina viejaAgent;
     public GameObject EndS5;
 
+    [Header("Scene6")]
+    public TextNode[] TextSleepS6;
+    bool aaaaaaaaaaaaaaa = true;
+
+
     private void Start()
     {
         transitionGO.SetActive(true);
@@ -152,6 +157,39 @@ public class GameManeger : MonoBehaviour
         {
             S5Updete();
         }
+        if (numScene == 6)
+        {
+            S6Updete();
+        }
+    }
+
+    private void S6Updete()
+    {
+        if (TM.isTalking == false && personasHabladas == 1 && aaaaaaaaaaaaaaa)
+        {
+            aaaaaaaaaaaaaaa = false;
+            StartCoroutine(GoToSleepS6());
+        }
+        if (TM.isTalking == false && personasHabladas == 2 && aaaaaaaaaaaaaaa)
+        {
+            aaaaaaaaaaaaaaa = false;
+            StartCoroutine(EndS6());
+        }
+    }
+
+    IEnumerator GoToSleepS6()
+    {
+        yield return new WaitForSeconds(6);
+        transition.SetTrigger("s6");
+        yield return new WaitForSeconds(4);
+        TM.SetNodesText(TextSleepS6);
+        personasHabladas = 2;
+        aaaaaaaaaaaaaaa = true;
+    }
+    IEnumerator EndS6()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("7_Bosc");//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     }
 
     private void S5Updete()
