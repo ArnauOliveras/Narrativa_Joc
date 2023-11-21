@@ -1229,6 +1229,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300004, guid: 4d1c05dfe6108f84698a160ee267841f, type: 3}
+--- !u!1 &193833714 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1922763790244634, guid: 9cd2dd4d6232e7042ae210310ee2cd34,
+    type: 3}
+  m_PrefabInstance: {fileID: 242489683}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &211588236 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5349410025022139386, guid: c866530af4dd68d4189d1b10e64a3972,
@@ -1948,6 +1954,52 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1975923769}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &348847318 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1922763790244634, guid: 9cd2dd4d6232e7042ae210310ee2cd34,
+    type: 3}
+  m_PrefabInstance: {fileID: 178752472}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &348847319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348847318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a677a7b2df0b53547a493436c0186d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  red: {fileID: 1611235912}
+  UI: {fileID: 869271043}
+  TextAdd:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: Toma, hay un insecto, ya me quedan menos.
+    optionFinal: 0
+  TextAddLast:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: "Toma, hay un insecto \xA1Ya los tengo todos!"
+    optionFinal: 0
+  - Name: Jan
+    Text: Ahora volver a casa del curandero, por fin lo tengo todo y ya puedo hacer
+      el ritual.
+    optionFinal: 0
+  TextNoAdd:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: "No hay nada... Tendr\xE9 que seguir buscando a los otros \xE1rboles."
+    optionFinal: 0
+  addGusano: 0
 --- !u!1001 &358644793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2856,6 +2908,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c866530af4dd68d4189d1b10e64a3972, type: 3}
+--- !u!114 &539243598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867921528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a677a7b2df0b53547a493436c0186d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  red: {fileID: 727748276}
+  UI: {fileID: 869271043}
+  TextAdd:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: Toma, hay un insecto, ya me quedan menos.
+    optionFinal: 0
+  TextAddLast:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: "Toma, hay un insecto \xA1Ya los tengo todos!"
+    optionFinal: 0
+  - Name: Jan
+    Text: Ahora volver a casa del curandero, por fin lo tengo todo y ya puedo hacer
+      el ritual.
+    optionFinal: 0
+  TextNoAdd:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: "No hay nada... Tendr\xE9 que seguir buscando a los otros \xE1rboles."
+    optionFinal: 0
+  addGusano: 0
 --- !u!4 &541615041 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5349410025022139386, guid: c866530af4dd68d4189d1b10e64a3972,
@@ -3118,10 +3210,24 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 703771594, guid: cc968f5dcc8aa264c9893d86edc1f9ad, type: 3}
+      propertyPath: orthographic size
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 1098552789483557515, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: m_text
-      value: 0/20
+      value: 0/5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1286085308070017522, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: m_text
+      value: E para investigar
+      objectReference: {fileID: 0}
+    - target: {fileID: 2550724600350120304, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2670221074751917632, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3133,6 +3239,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -206.5752
       objectReference: {fileID: 0}
+    - target: {fileID: 3202370699394653528, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301867630387087941, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -337
+      objectReference: {fileID: 0}
     - target: {fileID: 4810978044930627572, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3141,7 +3257,7 @@ PrefabInstance:
     - target: {fileID: 4810978044930627572, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.86
+      value: -2.736
       objectReference: {fileID: 0}
     - target: {fileID: 4810978044930627572, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3181,12 +3297,12 @@ PrefabInstance:
     - target: {fileID: 6765021311079410502, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -79.1
+      value: -79
       objectReference: {fileID: 0}
     - target: {fileID: 7193422504885415674, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: m_text
-      value: Ve a robar 20 flores a la vecina loca
+      value: "Busca en los \xE1rboles 5 insectos:"
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3198,6 +3314,11 @@ PrefabInstance:
       propertyPath: vecina
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: medicas7
+      value: 
+      objectReference: {fileID: 1997185615}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: numScene
@@ -3265,6 +3386,134 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
+      propertyPath: TextInit7.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextFinal1S7.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextFinal2S7.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextDesmayoS7.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextInit7.Array.data[0].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextInit7.Array.data[0].Text
+      value: "Ahora dentro del bosque tendr\xE9 que buscar en los \xE1rboles m\xE1s
+        grandes a ver si encuentro alg\xFAn insecto."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextFinal1S7.Array.data[0].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextFinal1S7.Array.data[0].Text
+      value: "Lo siento, no pretendo ofender tu juramento o lo que demonios sea\u2026
+        pero ese curandero es el \xFAnico que me ha dado algo de esperanza dentro
+        de tanta incertidumbre. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextFinal1S7.Array.data[1].Name
+      value: "M\xE9dica"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextFinal1S7.Array.data[1].Text
+      value: "Cometes un error chico. Pero eres libre de tomar tu propia decisi\xF3n\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextFinal1S7.Array.data[2].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextFinal1S7.Array.data[2].Text
+      value: Gracias por ayudarme a recuperar el conocimiento pero debo irme.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextFinal2S7.Array.data[0].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextFinal2S7.Array.data[0].Text
+      value: "Est\xE1 bien. Voy a darte un voto de confianza. Espero no arrepentirme\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextFinal2S7.Array.data[1].Name
+      value: "M\xE9dica"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextFinal2S7.Array.data[1].Text
+      value: "\xA1Genial! Ya ver\xE1s como todo sale como la seda."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextDesmayoS7.Array.data[0].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextDesmayoS7.Array.data[0].Text
+      value: "\xA1\xBFOtra vez?! No puede ser! Noto que me debilito\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextDesmayoS7.Array.data[1].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextDesmayoS7.Array.data[1].Text
+      value: "Si me desmayo aqu\xED no me encontrar\xE1 nadie!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextDesmayoS7.Array.data[2].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextDesmayoS7.Array.data[2].Text
+      value: "\xA1Debo buscar ayuda cuanto antes!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextDesmayoS7.Array.data[3].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextDesmayoS7.Array.data[3].Text
+      value: "\xA1SOCORROO! Socorrooo\u2026 So\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
       propertyPath: TextPilladoMinigameS5.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -3272,6 +3521,105 @@ PrefabInstance:
         type: 3}
       propertyPath: TextEmpezarPerseguirS5.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[0].Name
+      value: "M\xE9dica"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[0].Text
+      value: "\xA1Chico! \xA1Chico! \xBFTe encuentras bien? Me ha parecido escuchar
+        a alguien pedir ayuda. Justo pasaba por aqu\xED cerca buscandote."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[1].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[1].Text
+      value: "\xBFQu\xE9 ha pasado? Solo recuerdo desmayarme en el bosque\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[2].Name
+      value: "M\xE9dica"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[2].Text
+      value: "Los vecinos del pueblo me dijeron que estabas colaborando con el curandero,
+        en busca de una soluci\xF3n a tu enfermedad. Deber\xEDas alejarte de ese
+        hombre, te est\xE1 utilizando c\xF3mo conejillo de indias para su propio
+        beneficio. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[3].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[3].Text
+      value: "\xA1No me dej\xE1is otro remedio! \xA1Vosotros los m\xE9dicos nunca
+        hab\xE9is podido ayudarme!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[4].Name
+      value: "M\xE9dica"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[4].Text
+      value: "Yo creo poder ayudarte. Te lo dije, las enfermedades invisibles s\xF3n
+        mi especialidad."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[5].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[5].Text
+      value: "\xBFPorqu\xE9 querr\xEDas ayudarme? No tengo dinero\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[6].Name
+      value: "M\xE9dica"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[6].Text
+      value: "No me perdonar\xEDa el hecho de que acabases malparado pudi\xE9ndote
+        haber ayudado."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[7].Name
+      value: "M\xE9dica"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[7].Text
+      value: "Lo entender\xEDas si estuvieras al corriente del juramento hipocr\xE1tico
+        que hacemos los m\xE9dicos al finalizar nuestra formaci\xF3n\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[8].Name
+      value: "M\xE9dica"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[8].Text
+      value: "Sin embargo, por ese mismo juramento, no puedo presionarte a hacer
+        nada en contra de tu voluntad. \xBFY bien?\xBFQu\xE9 me dices?"
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3299,6 +3647,11 @@ PrefabInstance:
         type: 3}
       propertyPath: TextEmpezarPerseguirS5.Array.data[0].Text
       value: "\xA1Ehhh tuuu! \xA1Que haces robando mis flores! \xA1Ahora veras!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[8].optionFinal
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7876066704858991617, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3362,6 +3715,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc968f5dcc8aa264c9893d86edc1f9ad, type: 3}
+--- !u!4 &624564871 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4810978044930627572, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 624564870}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &636331667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3545,6 +3904,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f78f527e43206b408b73d96ccdbea2a, type: 3}
+--- !u!114 &666744143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038673204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a677a7b2df0b53547a493436c0186d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  red: {fileID: 1663038607}
+  UI: {fileID: 869271043}
+  TextAdd:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: Toma, hay un insecto, ya me quedan menos.
+    optionFinal: 0
+  TextAddLast:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: "Toma, hay un insecto \xA1Ya los tengo todos!"
+    optionFinal: 0
+  - Name: Jan
+    Text: Ahora volver a casa del curandero, por fin lo tengo todo y ya puedo hacer
+      el ritual.
+    optionFinal: 0
+  TextNoAdd:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: "No hay nada... Tendr\xE9 que seguir buscando a los otros \xE1rboles."
+    optionFinal: 0
+  addGusano: 1
 --- !u!1 &672267297
 GameObject:
   m_ObjectHideFlags: 0
@@ -4430,6 +4829,111 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 4d1c05dfe6108f84698a160ee267841f, type: 3}
+--- !u!1001 &782579523
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1997185616}
+    m_Modifications:
+    - target: {fileID: 1123550051981646473, guid: 066b9035b24027d409065149bf09ed1b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1123550051981646473, guid: 066b9035b24027d409065149bf09ed1b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.79999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 1123550051981646473, guid: 066b9035b24027d409065149bf09ed1b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.79999983
+      objectReference: {fileID: 0}
+    - target: {fileID: 1123550051981646473, guid: 066b9035b24027d409065149bf09ed1b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1123550051981646473, guid: 066b9035b24027d409065149bf09ed1b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.004744
+      objectReference: {fileID: 0}
+    - target: {fileID: 1123550051981646473, guid: 066b9035b24027d409065149bf09ed1b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.529409
+      objectReference: {fileID: 0}
+    - target: {fileID: 1123550051981646473, guid: 066b9035b24027d409065149bf09ed1b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.47553173
+      objectReference: {fileID: 0}
+    - target: {fileID: 1123550051981646473, guid: 066b9035b24027d409065149bf09ed1b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.50241137
+      objectReference: {fileID: 0}
+    - target: {fileID: 1123550051981646473, guid: 066b9035b24027d409065149bf09ed1b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.49652374
+      objectReference: {fileID: 0}
+    - target: {fileID: 1123550051981646473, guid: 066b9035b24027d409065149bf09ed1b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5034645
+      objectReference: {fileID: 0}
+    - target: {fileID: 1123550051981646473, guid: 066b9035b24027d409065149bf09ed1b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.49756452
+      objectReference: {fileID: 0}
+    - target: {fileID: 1123550051981646473, guid: 066b9035b24027d409065149bf09ed1b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.324
+      objectReference: {fileID: 0}
+    - target: {fileID: 1123550051981646473, guid: 066b9035b24027d409065149bf09ed1b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1123550051981646473, guid: 066b9035b24027d409065149bf09ed1b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313400550586899102, guid: 066b9035b24027d409065149bf09ed1b,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313400550586899102, guid: 066b9035b24027d409065149bf09ed1b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4514953906610781002, guid: 066b9035b24027d409065149bf09ed1b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893107148557831138, guid: 066b9035b24027d409065149bf09ed1b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 066b9035b24027d409065149bf09ed1b, type: 3}
+--- !u!4 &782579524 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1123550051981646473, guid: 066b9035b24027d409065149bf09ed1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 782579523}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &788596716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4835,6 +5339,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845229341}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &867921528 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2975732799178527481, guid: f1b66556485f0e542b87652d7fbe5423,
+    type: 3}
+  m_PrefabInstance: {fileID: 901022578}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &869271043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2550724600350120304, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 624564870}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &901022578
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5182,6 +5698,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c866530af4dd68d4189d1b10e64a3972, type: 3}
+--- !u!1 &954095006 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1922763790244634, guid: 9cd2dd4d6232e7042ae210310ee2cd34,
+    type: 3}
+  m_PrefabInstance: {fileID: 1474523370}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &966416781 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4834937856891288, guid: 6f78f527e43206b408b73d96ccdbea2a,
@@ -5298,6 +5820,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &988598430 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2975732799178527481, guid: f1b66556485f0e542b87652d7fbe5423,
+    type: 3}
+  m_PrefabInstance: {fileID: 1892364864}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &989993061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2975732799178527481, guid: f1b66556485f0e542b87652d7fbe5423,
+    type: 3}
+  m_PrefabInstance: {fileID: 1671073356}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1004157184 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5349410025022139386, guid: c866530af4dd68d4189d1b10e64a3972,
@@ -5988,6 +6522,46 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1923806643}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1139601821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193833714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a677a7b2df0b53547a493436c0186d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  red: {fileID: 1339260078}
+  UI: {fileID: 869271043}
+  TextAdd:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: Toma, hay un insecto, ya me quedan menos.
+    optionFinal: 0
+  TextAddLast:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: "Toma, hay un insecto \xA1Ya los tengo todos!"
+    optionFinal: 0
+  - Name: Jan
+    Text: Ahora volver a casa del curandero, por fin lo tengo todo y ya puedo hacer
+      el ritual.
+    optionFinal: 0
+  TextNoAdd:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: "No hay nada... Tendr\xE9 que seguir buscando a los otros \xE1rboles."
+    optionFinal: 0
+  addGusano: 1
 --- !u!4 &1146619809 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4834937856891288, guid: 6f78f527e43206b408b73d96ccdbea2a,
@@ -6945,6 +7519,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1349735057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954095006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a677a7b2df0b53547a493436c0186d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  red: {fileID: 1899438095}
+  UI: {fileID: 869271043}
+  TextAdd:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: Toma, hay un insecto, ya me quedan menos.
+    optionFinal: 0
+  TextAddLast:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: "Toma, hay un insecto \xA1Ya los tengo todos!"
+    optionFinal: 0
+  - Name: Jan
+    Text: Ahora volver a casa del curandero, por fin lo tengo todo y ya puedo hacer
+      el ritual.
+    optionFinal: 0
+  TextNoAdd:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: "No hay nada... Tendr\xE9 que seguir buscando a los otros \xE1rboles."
+    optionFinal: 0
+  addGusano: 1
 --- !u!1001 &1362455156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7312,6 +7926,52 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1398815455}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1403155655 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1922763790244634, guid: 9cd2dd4d6232e7042ae210310ee2cd34,
+    type: 3}
+  m_PrefabInstance: {fileID: 1184351577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1403155656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403155655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a677a7b2df0b53547a493436c0186d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  red: {fileID: 1117400147}
+  UI: {fileID: 869271043}
+  TextAdd:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: Toma, hay un insecto, ya me quedan menos.
+    optionFinal: 0
+  TextAddLast:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: "Toma, hay un insecto \xA1Ya los tengo todos!"
+    optionFinal: 0
+  - Name: Jan
+    Text: Ahora volver a casa del curandero, por fin lo tengo todo y ya puedo hacer
+      el ritual.
+    optionFinal: 0
+  TextNoAdd:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: "No hay nada... Tendr\xE9 que seguir buscando a los otros \xE1rboles."
+    optionFinal: 0
+  addGusano: 0
 --- !u!1001 &1408323375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7466,6 +8126,46 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1671073356}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1414352742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989993061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a677a7b2df0b53547a493436c0186d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  red: {fileID: 285439933}
+  UI: {fileID: 869271043}
+  TextAdd:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: Toma, hay un insecto, ya me quedan menos.
+    optionFinal: 0
+  TextAddLast:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: "Toma, hay un insecto \xA1Ya los tengo todos!"
+    optionFinal: 0
+  - Name: Jan
+    Text: Ahora volver a casa del curandero, por fin lo tengo todo y ya puedo hacer
+      el ritual.
+    optionFinal: 0
+  TextNoAdd:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: "No hay nada... Tendr\xE9 que seguir buscando a los otros \xE1rboles."
+    optionFinal: 0
+  addGusano: 0
 --- !u!1001 &1420807669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7535,6 +8235,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c866530af4dd68d4189d1b10e64a3972, type: 3}
+--- !u!1 &1426560016 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2975732799178527481, guid: f1b66556485f0e542b87652d7fbe5423,
+    type: 3}
+  m_PrefabInstance: {fileID: 455393220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1426560017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426560016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a677a7b2df0b53547a493436c0186d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  red: {fileID: 2130881526}
+  UI: {fileID: 869271043}
+  TextAdd:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: Toma, hay un insecto, ya me quedan menos.
+    optionFinal: 0
+  TextAddLast:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: "Toma, hay un insecto \xA1Ya los tengo todos!"
+    optionFinal: 0
+  - Name: Jan
+    Text: Ahora volver a casa del curandero, por fin lo tengo todo y ya puedo hacer
+      el ritual.
+    optionFinal: 0
+  TextNoAdd:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: "No hay nada... Tendr\xE9 que seguir buscando a los otros \xE1rboles."
+    optionFinal: 0
+  addGusano: 1
 --- !u!1001 &1454444307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7610,6 +8356,46 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1892364864}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1464949115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988598430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a677a7b2df0b53547a493436c0186d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  red: {fileID: 1409719323}
+  UI: {fileID: 869271043}
+  TextAdd:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: Toma, hay un insecto, ya me quedan menos.
+    optionFinal: 0
+  TextAddLast:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: "Toma, hay un insecto \xA1Ya los tengo todos!"
+    optionFinal: 0
+  - Name: Jan
+    Text: Ahora volver a casa del curandero, por fin lo tengo todo y ya puedo hacer
+      el ritual.
+    optionFinal: 0
+  TextNoAdd:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: "No hay nada... Tendr\xE9 que seguir buscando a los otros \xE1rboles."
+    optionFinal: 0
+  addGusano: 0
 --- !u!1001 &1474523370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8106,6 +8892,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f78f527e43206b408b73d96ccdbea2a, type: 3}
+--- !u!1 &1595730494 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1922763790244634, guid: 9cd2dd4d6232e7042ae210310ee2cd34,
+    type: 3}
+  m_PrefabInstance: {fileID: 1165781176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1595730495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595730494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a677a7b2df0b53547a493436c0186d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  red: {fileID: 235104655}
+  UI: {fileID: 869271043}
+  TextAdd:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: Toma, hay un insecto, ya me quedan menos.
+    optionFinal: 0
+  TextAddLast:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: "Toma, hay un insecto \xA1Ya los tengo todos!"
+    optionFinal: 0
+  - Name: Jan
+    Text: Ahora volver a casa del curandero, por fin lo tengo todo y ya puedo hacer
+      el ritual.
+    optionFinal: 0
+  TextNoAdd:
+  - Name: Jan
+    Text: "A ver si hay algo en este \xE1rbol... espero que s\xED..."
+    optionFinal: 0
+  - Name: Jan
+    Text: "No hay nada... Tendr\xE9 que seguir buscando a los otros \xE1rboles."
+    optionFinal: 0
+  addGusano: 1
 --- !u!1 &1611235912
 GameObject:
   m_ObjectHideFlags: 0
@@ -8717,6 +9549,106 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1670199746
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1997185616}
+    m_Modifications:
+    - target: {fileID: 2297259300603469899, guid: c3594b3a316698842a361096d12d086b,
+        type: 3}
+      propertyPath: m_Name
+      value: Medica Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2297259300603469899, guid: c3594b3a316698842a361096d12d086b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084408363378552086, guid: c3594b3a316698842a361096d12d086b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417355147673995053, guid: c3594b3a316698842a361096d12d086b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417355147673995053, guid: c3594b3a316698842a361096d12d086b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9599998
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417355147673995053, guid: c3594b3a316698842a361096d12d086b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.96000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417355147673995053, guid: c3594b3a316698842a361096d12d086b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.9599998
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417355147673995053, guid: c3594b3a316698842a361096d12d086b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.270838
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417355147673995053, guid: c3594b3a316698842a361096d12d086b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.4534087
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417355147673995053, guid: c3594b3a316698842a361096d12d086b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.52600724
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417355147673995053, guid: c3594b3a316698842a361096d12d086b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.0010465086
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417355147673995053, guid: c3594b3a316698842a361096d12d086b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417355147673995053, guid: c3594b3a316698842a361096d12d086b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99999946
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417355147673995053, guid: c3594b3a316698842a361096d12d086b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417355147673995053, guid: c3594b3a316698842a361096d12d086b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417355147673995053, guid: c3594b3a316698842a361096d12d086b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8417355147673995053, guid: c3594b3a316698842a361096d12d086b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c3594b3a316698842a361096d12d086b, type: 3}
+--- !u!4 &1670199747 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8417355147673995053, guid: c3594b3a316698842a361096d12d086b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1670199746}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1671073356
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10399,6 +11331,39 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1067040392}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1997185615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1997185616}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1997185616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997185615}
+  m_LocalRotation: {x: -0, y: -0.7078467, z: -0, w: 0.70636606}
+  m_LocalPosition: {x: -0.5865487, y: -5.5717607, z: -2.9171607}
+  m_LocalScale: {x: 1.2500001, y: 1.25, z: 1.2500001}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1670199747}
+  - {fileID: 782579524}
+  m_Father: {fileID: 624564871}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2003099643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10587,6 +11552,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5349410025022139386, guid: c866530af4dd68d4189d1b10e64a3972,
     type: 3}
   m_PrefabInstance: {fileID: 484163470}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2038673204 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2975732799178527481, guid: f1b66556485f0e542b87652d7fbe5423,
+    type: 3}
+  m_PrefabInstance: {fileID: 2040316174}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2040316174
 PrefabInstance:

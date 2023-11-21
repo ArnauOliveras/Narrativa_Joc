@@ -24,6 +24,8 @@ public class GameManeger : MonoBehaviour
     public Animator transition;
     public GameObject transitionGO;
 
+    public TextMeshProUGUI missNum;
+    public TextMeshProUGUI missTitle;
 
     [Header("Scene1")]
     public GameObject mainMenu;
@@ -55,8 +57,6 @@ public class GameManeger : MonoBehaviour
     bool talkS3 = false;
     bool starts4shift = true;
 
-    public TextMeshProUGUI missNum;
-    public TextMeshProUGUI missTitle;
     public GameObject GoToForest;
     int personasPorHablar = 6;
 
@@ -98,11 +98,22 @@ public class GameManeger : MonoBehaviour
     public TextNode[] TextSleepS6;
     bool aaaaaaaaaaaaaaa = true;
 
+    [Header("Scene7")]
+    public int insectos = 0;
+    public int MAXinsectos = 5;
+    public TextNode[] TextDesmayoS7;
+    public TextNode[] TextInit7;
+    public TextNode[] TextEndMedicaS7;
+    public TextNode[] TextFinal1S7;
+    public TextNode[] TextFinal2S7;
+    public GameObject medicas7;
+    bool finalCurandero = false;
+
 
     private void Start()
     {
         transitionGO.SetActive(true);
-        
+
         if (numScene == 2)
         {
             TM.SetNodesText(TextInit2);
@@ -123,6 +134,10 @@ public class GameManeger : MonoBehaviour
         if (numScene == 5)
         {
             FlowersS5 = GameObject.FindGameObjectsWithTag("Flower");
+        }
+        if (numScene == 7)
+        {
+            TM.SetNodesText(TextInit7);
         }
     }
     public IEnumerator ShiftParaCorrer()
@@ -161,6 +176,104 @@ public class GameManeger : MonoBehaviour
         {
             S6Updete();
         }
+        if (numScene == 7)
+        {
+            S7Updete();
+        }
+    }
+
+    private void S7Updete()
+    {
+#if UNITY_EDITOR
+        if (Input.GetKeyUp(KeyCode.V))
+        {
+            AddGusano();
+        }
+#endif
+
+        if (personasHabladas == 1 && TM.isTalking == false)
+        {
+            transition.SetTrigger("s7");
+            StartCoroutine(EndS7_02());
+            personasHabladas = 2;
+        }
+        if (personasHabladas == 10 && TM.isTalking == false)
+        {
+            if (finalCurandero)
+            {
+                TM.SetNodesText(TextFinal1S7);
+                personasHabladas = 20;
+            }
+            else
+            {
+                TM.SetNodesText(TextFinal2S7);
+                personasHabladas = 20;
+            }
+        }
+        if (personasHabladas == 20 && TM.isTalking == false)
+        {
+            StartCoroutine(EndS7_03());
+            if (finalCurandero)
+            {
+                transition.SetTrigger("s7");
+            }
+            else
+            {
+                transition.SetTrigger("s7");
+            }
+            personasHabladas = 2;
+        }
+    }
+    public void setFinal(bool f1)
+    {
+        finalCurandero = f1;
+    }
+
+    public void AddGusano()
+    {
+        insectos++;
+        missNum.text = insectos + "/5";
+
+        if (insectos == MAXinsectos)
+        {
+            StartCoroutine(EndS7_01());
+        }
+    }
+
+    IEnumerator EndS7_01()
+    {
+        yield return new WaitForSeconds(8);
+        playerController.stop = true;
+        UI.SetActive(false);
+        transition.SetTrigger("s7");
+        yield return new WaitForSeconds(2);
+        TM.SetNodesText(TextDesmayoS7);
+        personasHabladas = 1;
+    }
+
+    IEnumerator EndS7_03()
+    {
+        yield return new WaitForSeconds(3);
+        if (finalCurandero)
+        {
+            SceneManager.LoadScene("7_Bosc");//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        }
+        else
+        {
+            SceneManager.LoadScene("7_Bosc");
+        }
+    }
+
+    IEnumerator EndS7_02()
+    {
+        yield return new WaitForSeconds(5);
+        playerMesh.SetActive(false);
+        medicas7.SetActive(true);
+        yield return new WaitForSeconds(2);
+        transition.SetTrigger("s7");
+        yield return new WaitForSeconds(1);
+        TM.SetNodesText(TextEndMedicaS7);
+        personasHabladas = 10;
     }
 
     private void S6Updete()
@@ -189,9 +302,8 @@ public class GameManeger : MonoBehaviour
     IEnumerator EndS6()
     {
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene("7_Bosc");//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        SceneManager.LoadScene("7_Bosc");
     }
-
     private void S5Updete()
     {
         if (TM.isTalking == false && pillados5)
@@ -234,6 +346,7 @@ public class GameManeger : MonoBehaviour
         }
 #endif
     }
+
 
 
 
@@ -281,7 +394,7 @@ public class GameManeger : MonoBehaviour
         perseguirS5 = false;
         vecina.transform.position = PosicionVecina.position;
 
-        foreach(GameObject go in FlowersS5)
+        foreach (GameObject go in FlowersS5)
         {
             go.SetActive(true);
         }

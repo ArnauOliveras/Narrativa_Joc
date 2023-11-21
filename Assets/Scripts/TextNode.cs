@@ -7,4 +7,5 @@ public class TextNode
 {
     public string Name;
     public string Text;
+    public bool optionFinal;
 }

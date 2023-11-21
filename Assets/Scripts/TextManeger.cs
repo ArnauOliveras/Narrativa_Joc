@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class TextManeger : MonoBehaviour
 {
+    GameManeger GM;
     public TextNode[] textNodes;
     public GameObject textGO;
     public GameObject nextButton;
+    public GameObject options;
     public TextMeshProUGUI nameTMP;
     public TextMeshProUGUI textTMP;
     string thisText;
@@ -22,8 +25,12 @@ public class TextManeger : MonoBehaviour
     [Header("Desactivar perque sigui com la build")]
     public bool saltarTiempoEnUnity = true;
 
+    bool final;
+
     void Start()
     {
+        GM = GameObject.FindGameObjectWithTag("GameManeger").GetComponent<GameManeger>();
+        final = false;
         isTalking = false;
 #if UNITY_EDITOR
         if (saltarTiempoEnUnity)
@@ -45,7 +52,7 @@ public class TextManeger : MonoBehaviour
         {
             if (name == " ")
             {
-                textTMP.fontStyle = (FontStyles)FontStyle.Italic; 
+                textTMP.fontStyle = (FontStyles)FontStyle.Italic;
             }
             else
             {
@@ -95,7 +102,14 @@ public class TextManeger : MonoBehaviour
                 indice = 0;
                 thisName = "";
                 thisText = "";
-                nextButton.SetActive(true);
+                if (!final)
+                {
+                    nextButton.SetActive(true);
+                }
+                else
+                {
+                    options.SetActive(true);
+                }
                 isWriting = false;
                 lent = framesXLetra;
             }
@@ -105,12 +119,29 @@ public class TextManeger : MonoBehaviour
 
         if (isTalking)
         {
-            if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.KeypadEnter)) && canDoNextNode)
+            if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.KeypadEnter)) && canDoNextNode && !final)
             {
                 SetNextNode();
-                //StartCoroutine(CanDoNextNode());
                 canDoNextNode = false;
                 nextButton.SetActive(false);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha1) && canDoNextNode && final)
+            {
+                final = false;
+                canDoNextNode = false;
+                options.SetActive(false);
+                GM.setFinal(true);
+                SetNextNode();
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha2) && canDoNextNode && final)
+            {
+                final = false;
+                canDoNextNode = false;
+                options.SetActive(false);
+                GM.setFinal(false);
+                SetNextNode();
             }
         }
         else
@@ -134,6 +165,10 @@ public class TextManeger : MonoBehaviour
         {
             name = textNodes[nodeNum].Name;
             text = textNodes[nodeNum].Text;
+            if (textNodes[nodeNum].optionFinal)
+            {
+                final = true;
+            }
             isWriting = true;
         }
         else
@@ -141,6 +176,9 @@ public class TextManeger : MonoBehaviour
             isTalking = false;
             textNodes = null;
         }
+
+        
+
     }
 
 
