@@ -19,6 +19,7 @@ public class GameManeger : MonoBehaviour
     public PlayerController playerController;
     public bool SePuedeCorrer = false;
     public GameObject shiftParaCorrer;
+    public GameObject creditosGO;
 
     [Header("Transition")]
     public Animator transition;
@@ -109,16 +110,34 @@ public class GameManeger : MonoBehaviour
     public GameObject medicas7;
     bool finalCurandero = false;
 
+    [Header("Scene8")]
+    public TextNode[] TextRituals8;
+    public TextNode[] TextEnds8;
+    public GameObject maniquis8;
+
+
+    [Header("Scene9")]
+    public TextNode[] TextInit9;
+    public GameObject maniquis9;
+    public GameObject npcs9;
+
+
     [Header("Scene10")]
     public TextNode[] TextInit10;
     public TextNode[] TextEnd10;
     public TextNode[] TextEnd210;
     public TextNode[] TextEnd310;
 
+    [Header("Scene11")]
+    public TextNode[] TextInit11;
+
     private void Start()
     {
         transitionGO.SetActive(true);
-
+        if (numScene == 1)
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
         if (numScene == 2)
         {
             TM.SetNodesText(TextInit2);
@@ -144,10 +163,21 @@ public class GameManeger : MonoBehaviour
         {
             TM.SetNodesText(TextInit7);
         }
+        if (numScene == 9)
+        {
+            TM.SetNodesText(TextInit9);
+            personasHabladas = 1;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
         if (numScene == 10)
         {
             TM.SetNodesText(TextInit10);
             personasHabladas = 1;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        if (numScene == 11)
+        {
+            TM.SetNodesText(TextInit11);
             Cursor.lockState = CursorLockMode.Locked;
         }
     }
@@ -188,13 +218,126 @@ public class GameManeger : MonoBehaviour
         {
             S7Updete();
         }
-
+        if (numScene == 8)
+        {
+            S8Updete();
+        }
+        if (numScene == 9)
+        {
+            S9Updete();
+        }
         if (numScene == 10)
         {
             S10Updete();
         }
+        if (numScene == 11)
+        {
+            S11Updete();
+        }
     }
 
+    private void S9Updete()
+    {
+        if (personasHabladas == 1 && TM.isTalking == false)
+        {
+            transition.SetTrigger("s9");
+            StartCoroutine(InitS9());
+            personasHabladas = 50;
+        }
+        if (personasHabladas == 51 && TM.isTalking == false)
+        {
+            StartCoroutine(CREDITOS_01());
+            personasHabladas = 200;
+        }
+    }
+    IEnumerator InitS9()
+    {
+        yield return new WaitForSeconds(1.3f);
+        maniquis9.SetActive(false);
+        player.SetActive(true);
+        npcs9.SetActive(true);
+        camera.GetComponent<CameraController>().enabled = true;
+    }
+
+    IEnumerator CREDITOS_01()
+    {
+        yield return new WaitForSeconds(4);
+        creditosGO.SetActive(true);
+        yield return new WaitForSeconds(10);
+        transition.SetTrigger("s9");
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("1_House");
+    }
+
+
+    private void S8Updete()
+    {
+        if (personasHabladas == 1 && TM.isTalking == false)
+        {
+            transition.SetTrigger("s8");
+            StartCoroutine(Rituals8());
+            personasHabladas = 50;
+        }
+        if (personasHabladas == 10 && TM.isTalking == false)
+        {
+            transition.SetTrigger("s8");
+            StartCoroutine(Ends8());
+            personasHabladas = 50;
+        }
+
+        if (personasHabladas == 20 && TM.isTalking == false)
+        {
+            StartCoroutine(Ends_2_8());
+            personasHabladas = 50;
+        }
+    }
+    IEnumerator Rituals8()
+    {
+        yield return new WaitForSeconds(1.3f);
+        maniquis8.SetActive(true);
+        player.SetActive(false);
+        yield return new WaitForSeconds(2);
+        TM.SetNodesText(TextRituals8);
+        personasHabladas = 10;
+    }
+    
+    IEnumerator Ends8()
+    {
+        yield return new WaitForSeconds(3);
+        TM.SetNodesText(TextEnds8);
+        personasHabladas = 20;
+    }
+    IEnumerator Ends_2_8()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("f1_9_House");
+    }
+    private void S11Updete()
+    {
+        if (personasHabladas == 1)
+        {
+            Carta.SetActive(true);
+        }
+        else
+        {
+            Carta.SetActive(false);
+        }
+
+        if (personasHabladas == 1 && TM.isTalking == false)
+        {
+            StartCoroutine(CREDITOS());
+            personasHabladas = 2;
+        }
+    }
+    IEnumerator CREDITOS()
+    {
+        yield return new WaitForSeconds(4);
+        creditosGO.SetActive(true);
+        yield return new WaitForSeconds(10);
+        transition.SetTrigger("s6");
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("1_House");
+    }
     private void S10Updete()
     {
         if (personasHabladas == 1 && TM.isTalking == false)

@@ -408,12 +408,6 @@ Transform:
   m_Father: {fileID: 1761858799}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!224 &310798933 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6611309845857645601, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
-    type: 3}
-  m_PrefabInstance: {fileID: 1910499592}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &356405720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -965,82 +959,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &984413751
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 984413752}
-  - component: {fileID: 984413754}
-  - component: {fileID: 984413753}
-  m_Layer: 5
-  m_Name: Carta
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &984413752
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 984413751}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 310798933}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0025024, y: 160}
-  m_SizeDelta: {x: 1278.9264, y: 624.8464}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &984413753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 984413751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &984413754
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 984413751}
-  m_CullTransparentMesh: 1
 --- !u!1 &1022091668
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,16 +1127,20 @@ MonoBehaviour:
   - Name: ' '
     Text: "Desde hace varios a\xF1os, Jan padece una enfermedad desconocida que provoca
       que pierda el conocimiento de manera intermitente. "
+    optionFinal: 0
   - Name: ' '
     Text: "La enfermedad no tiene efectos secundarios ni perjudiciales para la salud
       como tal. Sin embargo hay veces que al despertar, Jan no sabe si sigue desmayado
       y esta viendo una ilusi\xF3n o si realmente se ha despertado."
+    optionFinal: 0
   - Name: ' '
     Text: "Esto provoca que puntualmente vea cosas que realmente no est\xE1n sucediendo."
+    optionFinal: 0
   - Name: ' '
     Text: "Jan ha asistido al hospital varias veces en busca de un remedio que le
       permita hacer vida corriente, pero tras varias investigaciones, los m\xE9dicos
       han tirado la toalla. Catalogan el caso como un \u201Chechizo incurable\u201D."
+    optionFinal: 0
   Text2: []
   repeatText1: 0
   DistanceToTalk: 1.5
@@ -1842,11 +1764,14 @@ MonoBehaviour:
   Text1:
   - Name: Jan
     Text: "Ya estoy listo mam\xE1. Cuando quieras podemos irnos."
+    optionFinal: 0
   - Name: Madre
     Text: Dame un segundo que reviso el correo y salimos.
+    optionFinal: 0
   - Name: Madre
     Text: "Estoy harta de que nos manden publicidad! Para colmo solo dicen tonter\xEDas\u2026
       Deshecha-lo a la papelera."
+    optionFinal: 0
   Text2: []
   repeatText1: 0
   DistanceToTalk: 1.5
@@ -1869,8 +1794,10 @@ MonoBehaviour:
   Text1:
   - Name: Jan
     Text: Marxem?
+    optionFinal: 0
   - Name: Mare Jan
     Text: Si va!
+    optionFinal: 0
   Text2: []
   repeatText1: 0
   DistanceToTalk: 1.5
@@ -2572,7 +2499,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Carta
       value: 
-      objectReference: {fileID: 984413751}
+      objectReference: {fileID: 6918646483713788860}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: EatGM
@@ -3035,6 +2962,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 066b9035b24027d409065149bf09ed1b, type: 3}
+--- !u!1 &6918646483713788860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8550943500127057615, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 1910499592}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8539754502117416933
 PrefabInstance:
   m_ObjectHideFlags: 0
