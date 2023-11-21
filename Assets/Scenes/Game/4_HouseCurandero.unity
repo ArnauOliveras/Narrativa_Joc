@@ -342,7 +342,7 @@ PrefabInstance:
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
       propertyPath: Text1.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
@@ -352,27 +352,27 @@ PrefabInstance:
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
       propertyPath: Text1.Array.data[0].Text
-      value: Vaia... ya te has levantado
+      value: "Buenos d\xEDas, Jan. Tengo entendido que me estabas buscando\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
       propertyPath: Text1.Array.data[1].Name
-      value: Persona misteriosa
-      objectReference: {fileID: 0}
-    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
-        type: 3}
-      propertyPath: Text1.Array.data[1].Text
-      value: "\xBFComo te encuentras ni\xF1o?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
-        type: 3}
-      propertyPath: Text1.Array.data[2].Name
       value: Jan
       objectReference: {fileID: 0}
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
+      propertyPath: Text1.Array.data[1].Text
+      value: "\xA1\xBFAcaso eres el curandero?!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
+        type: 3}
+      propertyPath: Text1.Array.data[2].Name
+      value: Curandero
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
+        type: 3}
       propertyPath: Text1.Array.data[2].Text
-      value: "Ho... Hola, \xBFQuien es usted y donde estoy?"
+      value: Efectivamente. Toma asiento.
       objectReference: {fileID: 0}
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
@@ -382,7 +382,7 @@ PrefabInstance:
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
       propertyPath: Text1.Array.data[3].Text
-      value: Toma asiento y te lo explico todo
+      value: Efectivamente. Toma asiento.
       objectReference: {fileID: 0}
     - target: {fileID: 6444811164286833102, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
@@ -1622,9 +1622,8 @@ MonoBehaviour:
   player: {fileID: 0}
   Text1:
   - Name: Jan
-    Text: Esta todo muy sucio y desordenado...
-  - Name: Jan
-    Text: Parece que hay muchas hierbas, que rara me parece esta casa...
+    Text: "Todo est\xE1 lleno de polvo y suciedad. Una limpieza no vendr\xEDa mal\u2026"
+    optionFinal: 0
   Text2: []
   repeatText1: 0
   DistanceToTalk: 2
@@ -2495,7 +2494,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextInit4_2.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -2505,7 +2504,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextInit4.Array.data[0].Text
-      value: "Buah... Do... \xBFDonde estoy?"
+      value: "Ughh\u2026 Do\u2026 \xBFDonde estoy..?"
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -2515,7 +2514,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextInit4.Array.data[1].Text
-      value: Estoy muy mareado...
+      value: "A\xFAn sigo algo mareado\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -2525,7 +2524,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextInit4.Array.data[2].Text
-      value: Voy a intentar levantarme
+      value: "Deber\xEDa incorporarme."
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -2535,7 +2534,8 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextInit4_2.Array.data[0].Text
-      value: Parece que esta bacia la casa...
+      value: "Parece que estoy en alg\xFAn tipo de choza abandonada. \xBFPero entonces,
+        c\xF3mo he llegado hasta aqu\xED?"
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -2550,48 +2550,95 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextWithCuranderoS4.Array.size
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextWithCuranderoS4.Array.data[0].Name
-      value: Jan
-      objectReference: {fileID: 0}
-    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
-        type: 3}
-      propertyPath: TextWithCuranderoS4.Array.data[0].Text
-      value: Explicame todo todo, empezando por quien eres
-      objectReference: {fileID: 0}
-    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
-        type: 3}
-      propertyPath: TextWithCuranderoS4.Array.data[1].Name
-      value: Persona misteriosa
-      objectReference: {fileID: 0}
-    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
-        type: 3}
-      propertyPath: TextWithCuranderoS4.Array.data[1].Text
-      value: Soy un curandero
-      objectReference: {fileID: 0}
-    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
-        type: 3}
-      propertyPath: TextWithCuranderoS4.Array.data[2].Name
-      value: 'Jan '
-      objectReference: {fileID: 0}
-    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
-        type: 3}
-      propertyPath: TextWithCuranderoS4.Array.data[2].Text
-      value: "Ooohhhh.... yo estoy buscando un curandero de una carta... \xBFEres
-        tu?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
-        type: 3}
-      propertyPath: TextWithCuranderoS4.Array.data[3].Name
       value: Curandero
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
+      propertyPath: TextWithCuranderoS4.Array.data[0].Text
+      value: "Estoy al corriente de tu problema, no por nada hice que apareciese
+        mi publicidad en tu buz\xF3n.Hoy en d\xEDa todo se ha modernizado y tengo
+        que adaptarme, que le vamos a hacer\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextWithCuranderoS4.Array.data[1].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextWithCuranderoS4.Array.data[1].Text
+      value: "Usted es mi \xFAltima esperanza. \xBFCree de verdad que puede tratar
+        mi enfermedad?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextWithCuranderoS4.Array.data[2].Name
+      value: Curandero
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextWithCuranderoS4.Array.data[2].Text
+      value: "Por supuesto. Al fin y al cabo las enfermedades invisibles solo pueden
+        ser erradicadas con magia. Dime, \xBFhas sido tratado alguna vez con un hechizo?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextWithCuranderoS4.Array.data[3].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
       propertyPath: TextWithCuranderoS4.Array.data[3].Text
-      value: Si, soy yo Jan
+      value: "\xBFHechizo...?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextWithCuranderoS4.Array.data[4].Name
+      value: Curandero
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextWithCuranderoS4.Array.data[4].Text
+      value: No te asustes, es totalmente indoloro. Solo necesitare que me traigas
+        un par de cosas para llevar a cabo el remedio.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextWithCuranderoS4.Array.data[5].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextWithCuranderoS4.Array.data[5].Text
+      value: "Mmmmhh. Est\xE1 bien. \xBFQue necesita?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextWithCuranderoS4.Array.data[6].Name
+      value: Curandero
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextWithCuranderoS4.Array.data[6].Text
+      value: "Para empezar necesito que me traigas unas flores. Son fundamentales
+        para cualquier base de un buen hechizo. Tengo entendido que algunos vecinos
+        del pueblo poseen flores en su jard\xEDn con las que podr\xEDa llevar a cabo
+        la receta."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextWithCuranderoS4.Array.data[7].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextWithCuranderoS4.Array.data[7].Text
+      value: "\xA1Entendido!"
       objectReference: {fileID: 0}
     - target: {fileID: 7876066704858991617, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}

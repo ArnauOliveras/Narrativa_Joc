@@ -342,27 +342,29 @@ PrefabInstance:
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
       propertyPath: Text1.Array.size
-      value: 4
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
       propertyPath: Text1.Array.data[0].Name
-      value: Persona misteriosa
+      value: Jan
       objectReference: {fileID: 0}
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
       propertyPath: Text1.Array.data[0].Text
-      value: Vaia... ya te has levantado
+      value: "Aqu\xED est\xE1n las flores\u2026 Un poco m\xE1s y me cuestan una buena
+        paliza."
       objectReference: {fileID: 0}
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
       propertyPath: Text1.Array.data[1].Name
-      value: Persona misteriosa
+      value: Curandero
       objectReference: {fileID: 0}
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
       propertyPath: Text1.Array.data[1].Text
-      value: "\xBFComo te encuentras ni\xF1o?"
+      value: "Perfecto, vamos por buen camino. Disculpa, se me olvid\xF3 mencionar
+        que los vecinos est\xE1n hartos de qu\xE9 les robe las flores\u2026 "
       objectReference: {fileID: 0}
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
@@ -372,17 +374,112 @@ PrefabInstance:
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
       propertyPath: Text1.Array.data[2].Text
-      value: "Ho... Hola, \xBFQuien es usted y donde estoy?"
+      value: "Ya le vale\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
       propertyPath: Text1.Array.data[3].Name
-      value: Persona misteriosa
+      value: Curandero
       objectReference: {fileID: 0}
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
       propertyPath: Text1.Array.data[3].Text
-      value: Toma asiento y te lo explico todo
+      value: 'Todo sea por un buen hechizo. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
+        type: 3}
+      propertyPath: Text1.Array.data[4].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
+        type: 3}
+      propertyPath: Text1.Array.data[4].Text
+      value: "Si usted lo dice\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
+        type: 3}
+      propertyPath: Text1.Array.data[5].Name
+      value: Curandero
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
+        type: 3}
+      propertyPath: Text1.Array.data[5].Text
+      value: Necesito que me traigas otro ingrediente.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
+        type: 3}
+      propertyPath: Text1.Array.data[6].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
+        type: 3}
+      propertyPath: Text1.Array.data[6].Text
+      value: Sorprenda-me.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
+        type: 3}
+      propertyPath: Text1.Array.data[7].Name
+      value: Curandero
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
+        type: 3}
+      propertyPath: Text1.Array.data[7].Text
+      value: "\xA1Insectos! Jurar\xEDa que todav\xEDa me quedaban algunos, pero supongo
+        que me qued\xE9 sin en mi \xFAltimo hechizo. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
+        type: 3}
+      propertyPath: Text1.Array.data[8].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
+        type: 3}
+      propertyPath: Text1.Array.data[8].Text
+      value: "Est\xE1 bien. \xBFD\xF3nde se encuentran?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
+        type: 3}
+      propertyPath: Text1.Array.data[9].Name
+      value: Curandero
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
+        type: 3}
+      propertyPath: Text1.Array.data[9].Text
+      value: "Deber\xE1s adentrarte en el bosque y acercarte a aquellos \xE1rboles
+        que sean m\xE1s grandes, suelen agruparse ah\xED. No olvides llevarte un
+        frasco para poder atraparlos."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
+        type: 3}
+      propertyPath: Text1.Array.data[10].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
+        type: 3}
+      propertyPath: Text1.Array.data[10].Text
+      value: Entendido, voy ya mismo.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
+        type: 3}
+      propertyPath: Text1.Array.data[11].Name
+      value: Curandero
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
+        type: 3}
+      propertyPath: Text1.Array.data[11].Text
+      value: "\xA1Detente! Es fundamental que para que el hechizo funcione, est\xE9s
+        plenamente descansado. Deber\xEDas dormir antes de irte, de lo contrario
+        el hechizo podr\xEDa resultar defectuoso."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
+        type: 3}
+      propertyPath: Text1.Array.data[12].Name
+      value: Jan
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
+        type: 3}
+      propertyPath: Text1.Array.data[12].Text
+      value: "De acuerdo, saldr\xE9 ma\xF1ana a primera hora pues."
       objectReference: {fileID: 0}
     - target: {fileID: 6444811164286833102, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
