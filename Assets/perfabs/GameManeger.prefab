@@ -2209,6 +2209,9 @@ MonoBehaviour:
   TextRituals8: []
   TextEnds8: []
   maniquis8: {fileID: 0}
+  TextInit9: []
+  maniquis9: {fileID: 0}
+  npcs9: {fileID: 0}
   TextInit10: []
   TextEnd10: []
   TextEnd210: []
@@ -3244,12 +3247,12 @@ PrefabInstance:
     - target: {fileID: 7543065299364109898, guid: 29e6667d27e6491488fa9cadb5f5ac8d,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1000
+      value: 1557.5132
       objectReference: {fileID: 0}
     - target: {fileID: 7543065299364109898, guid: 29e6667d27e6491488fa9cadb5f5ac8d,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 600
+      value: 896.8738
       objectReference: {fileID: 0}
     - target: {fileID: 7543065299364109898, guid: 29e6667d27e6491488fa9cadb5f5ac8d,
         type: 3}
@@ -3289,12 +3292,12 @@ PrefabInstance:
     - target: {fileID: 7543065299364109898, guid: 29e6667d27e6491488fa9cadb5f5ac8d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.002492
+      value: 0.000011444
       objectReference: {fileID: 0}
     - target: {fileID: 7543065299364109898, guid: 29e6667d27e6491488fa9cadb5f5ac8d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0001421
+      value: 0.000011444
       objectReference: {fileID: 0}
     - target: {fileID: 7543065299364109898, guid: 29e6667d27e6491488fa9cadb5f5ac8d,
         type: 3}
