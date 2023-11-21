@@ -109,6 +109,11 @@ public class GameManeger : MonoBehaviour
     public GameObject medicas7;
     bool finalCurandero = false;
 
+    [Header("Scene10")]
+    public TextNode[] TextInit10;
+    public TextNode[] TextEnd10;
+    public TextNode[] TextEnd210;
+    public TextNode[] TextEnd310;
 
     private void Start()
     {
@@ -139,6 +144,12 @@ public class GameManeger : MonoBehaviour
         {
             TM.SetNodesText(TextInit7);
         }
+        if (numScene == 10)
+        {
+            TM.SetNodesText(TextInit10);
+            personasHabladas = 1;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
     public IEnumerator ShiftParaCorrer()
     {
@@ -153,13 +164,10 @@ public class GameManeger : MonoBehaviour
         {
             S1Updete();
         }
-
         if (numScene == 2)
         {
             S2Updete();
-
         }
-
         if (numScene == 3)
         {
             S3Updete();
@@ -180,8 +188,57 @@ public class GameManeger : MonoBehaviour
         {
             S7Updete();
         }
+
+        if (numScene == 10)
+        {
+            S10Updete();
+        }
     }
 
+    private void S10Updete()
+    {
+        if (personasHabladas == 1 && TM.isTalking == false)
+        {
+            transition.SetTrigger("s10");
+            StartCoroutine(EndS10());
+            personasHabladas = 2;
+        }
+        if (personasHabladas == 5 && TM.isTalking == false)
+        {
+            transition.SetTrigger("s10");
+            StartCoroutine(End_02_S10());
+            personasHabladas = 2;
+        }
+        if (personasHabladas == 10 && TM.isTalking == false)
+        {
+            transition.SetTrigger("s10");
+            StartCoroutine(End_03_S10());
+            personasHabladas = 2;
+        }
+        if (personasHabladas == 20 && TM.isTalking == false)
+        {
+            SceneManager.LoadScene("f2_9_House");
+        }
+    }
+    IEnumerator EndS10()
+    {
+        yield return new WaitForSeconds(4);
+        TM.SetNodesText(TextEnd10);
+        personasHabladas = 5;
+    }
+    IEnumerator End_02_S10()
+    {
+        yield return new WaitForSeconds(4);
+        TM.SetNodesText(TextEnd210);
+        personasHabladas = 10;
+    }
+    IEnumerator End_03_S10()
+    {
+        yield return new WaitForSeconds(4);
+        TM.SetNodesText(TextEnd310);
+        personasHabladas = 20;
+        
+    }
     private void S7Updete()
     {
 #if UNITY_EDITOR
@@ -256,11 +313,11 @@ public class GameManeger : MonoBehaviour
         yield return new WaitForSeconds(3);
         if (finalCurandero)
         {
-            SceneManager.LoadScene("7_Bosc");//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            SceneManager.LoadScene("f1_8_HouseCurandero");
         }
         else
         {
-            SceneManager.LoadScene("7_Bosc");
+            SceneManager.LoadScene("f2_8_Hospital");
         }
     }
 

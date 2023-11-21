@@ -1097,7 +1097,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &562953782820644458
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2129,7 +2129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4839c87ac0b3fd34eb880f65ec173b27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numScene: 3
+  numScene: 8
   TM: {fileID: 8329810188504844236}
   EperParlar: {fileID: 2199524334182495179}
   EperInteractuar: {fileID: 2550724600350120304}

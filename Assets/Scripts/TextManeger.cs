@@ -95,7 +95,7 @@ public class TextManeger : MonoBehaviour
 
             nameTMP.text = thisName;
             textTMP.text = thisText;
-
+            textGO.SetActive(true);
             if (canContinueName && canContinueText)
             {
                 canDoNextNode = true;
@@ -190,7 +190,7 @@ public class TextManeger : MonoBehaviour
         nodeNum = 0;
         textNodes = l_textNodes;
         isTalking = true;
-        textGO.SetActive(true);
+        
         name = textNodes[nodeNum].Name;
         text = textNodes[nodeNum].Text;
         isWriting = true;
