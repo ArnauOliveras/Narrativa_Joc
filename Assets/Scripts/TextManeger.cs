@@ -26,7 +26,7 @@ public class TextManeger : MonoBehaviour
 
     bool final;
 
-    void Start()
+    void Awake()
     {
         GM = GameObject.FindGameObjectWithTag("GameManeger").GetComponent<GameManeger>();
         final = false;
@@ -43,7 +43,7 @@ public class TextManeger : MonoBehaviour
 
     int indice = 0;
     int lent = 0;
-    public int framesXLetra = 4;
+    int framesXLetra = 2;
 
     void Update()
     {

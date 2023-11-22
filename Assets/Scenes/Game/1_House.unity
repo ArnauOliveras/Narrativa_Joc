@@ -2174,7 +2174,7 @@ MonoBehaviour:
     Text: Dame un segundo que reviso el correo y salimos.
     optionFinal: 0
   - Name: Madre
-    Text: "Estoy harta de que nos manden publicidad! Para colmo solo dicen tonter\xEDas\u2026
+    Text: "\xA1Estoy harta de que nos manden publicidad! Para colmo solo dicen tonter\xEDas\u2026
       Deshecha-lo a la papelera."
     optionFinal: 0
   Text2: []

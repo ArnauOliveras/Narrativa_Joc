@@ -130,9 +130,10 @@ public class GameManeger : MonoBehaviour
 
     [Header("Scene11")]
     public TextNode[] TextInit11;
-
+    
     private void Start()
     {
+        personasHabladas = 0;
         transitionGO.SetActive(true);
         if (numScene == 1)
         {
