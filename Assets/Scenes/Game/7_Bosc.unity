@@ -3222,6 +3222,22 @@ PrefabInstance:
       propertyPath: m_text
       value: E para investigar
       objectReference: {fileID: 0}
+    - target: {fileID: 1883123637343251689, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2196411938844527787, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -250
+      objectReference: {fileID: 0}
+    - target: {fileID: 2419849719933072175, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: m_text
+      value: "\xBFseguir el camino de lo m\xEDstico con el curandero o confiar en
+        la medicina tradicional con la m\xE9dica?"
+      objectReference: {fileID: 0}
     - target: {fileID: 2550724600350120304, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: m_IsActive
@@ -3246,6 +3262,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -337
+      objectReference: {fileID: 0}
+    - target: {fileID: 4748433888179286098, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 4810978044930627572, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3296,6 +3317,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -79
+      objectReference: {fileID: 0}
+    - target: {fileID: 7014934750838057791, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7193422504885415674, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3405,7 +3431,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextEndMedicaS7.Array.size
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3621,6 +3647,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[9].Name
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[9].Text
+      value: "\xBFSeguir el camino de lo m\xEDstico con el curandero o confiar en
+        la medicina tradicional con la m\xE9dica?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
       propertyPath: TextGoToForest3.Array.data[1].Text
       value: "Probar\xE9 de ir al bosque a ver si encuentro algo. Por lo que me han
         dicho, creo que la entrada al bosque est\xE1 al lado de donde he hablado
@@ -3649,6 +3686,11 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextEndMedicaS7.Array.data[8].optionFinal
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextEndMedicaS7.Array.data[9].optionFinal
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7876066704858991617, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
