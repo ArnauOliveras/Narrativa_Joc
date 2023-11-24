@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/f2_9_House.unity
     guid: 692730ea54bc5394389fcbfd8d053410
+  - enabled: 1
+    path: Assets/Scenes/Game/1_House_1.unity
+    guid: 57a6c738b0d537a47923e89e904b526a
+  - enabled: 1
+    path: Assets/Scenes/Game/7_Bosc_1.unity
+    guid: 6a4b53fb9ac58b84292f452a6c3ac954
   m_configObjects: {}

@@ -181,6 +181,12 @@ public class GameManeger : MonoBehaviour
             TM.SetNodesText(TextInit11);
             Cursor.lockState = CursorLockMode.Locked;
         }
+        if (numScene == 22)
+        {
+            insectos = MAXinsectos;
+            missNum.text = insectos + "/5";
+            StartCoroutine(EndS7_01());
+        }
     }
     public IEnumerator ShiftParaCorrer()
     {
@@ -235,6 +241,11 @@ public class GameManeger : MonoBehaviour
         {
             S11Updete();
         }
+        if (numScene == 22)
+        {
+            S7Updete();
+
+        }
     }
 
     private void S9Updete()
@@ -267,7 +278,7 @@ public class GameManeger : MonoBehaviour
         yield return new WaitForSeconds(10);
         transition.SetTrigger("s9");
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene("1_House");
+        SceneManager.LoadScene("1_House_1");
     }
 
 
@@ -337,7 +348,7 @@ public class GameManeger : MonoBehaviour
         yield return new WaitForSeconds(10);
         transition.SetTrigger("s6");
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene("1_House");
+        SceneManager.LoadScene("1_House_1");
     }
     private void S10Updete()
     {
@@ -707,6 +718,11 @@ public class GameManeger : MonoBehaviour
 
     private void S1Updete()
     {
+        if (Input.GetKeyUp(KeyCode.O) && Input.GetKeyUp(KeyCode.F))
+        {
+            SceneManager.LoadScene("7_Bosc_1");
+        }
+
         if (TM.isTalking == false && personasHabladas == 1 && activeEatS1)
         {
             activeEatS1 = false;
@@ -803,6 +819,10 @@ public class GameManeger : MonoBehaviour
     public void QuitMM()
     {
         Application.Quit();
+    }
+    public void OtroFinalMM()
+    {
+        SceneManager.LoadScene("7_Bosc_1");
     }
 
 }
