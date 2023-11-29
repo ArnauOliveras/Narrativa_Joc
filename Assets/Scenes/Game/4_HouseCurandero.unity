@@ -2504,7 +2504,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextInit4.Array.data[0].Text
-      value: "Ughh\u2026 Do\u2026 \xBFDonde estoy..?"
+      value: "Ughh\u2026 Do\u2026 \xBFD\xF3nde estoy..?"
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -2561,8 +2561,8 @@ PrefabInstance:
         type: 3}
       propertyPath: TextWithCuranderoS4.Array.data[0].Text
       value: "Estoy al corriente de tu problema, no por nada hice que apareciese
-        mi publicidad en tu buz\xF3n.Hoy en d\xEDa todo se ha modernizado y tengo
-        que adaptarme, que le vamos a hacer\u2026"
+        mi publicidad en tu buz\xF3n. Hoy en d\xEDa todo se ha modernizado y tengo
+        que adaptarme, que le vamos a hacer\u2026 "
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -2573,7 +2573,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TextWithCuranderoS4.Array.data[1].Text
       value: "Usted es mi \xFAltima esperanza. \xBFCree de verdad que puede tratar
-        mi enfermedad?"
+        mi enfermedad? "
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -2583,8 +2583,8 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextWithCuranderoS4.Array.data[2].Text
-      value: "Por supuesto. Al fin y al cabo las enfermedades invisibles solo pueden
-        ser erradicadas con magia. Dime, \xBFhas sido tratado alguna vez con un hechizo?"
+      value: "Por supuesto. Al fin y al cabo, las enfermedades invisibles solo pueden
+        ser erradicadas con magia. Dime, \xBFhas sido tratado alguna vez con un hechizo? "
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -2594,7 +2594,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextWithCuranderoS4.Array.data[3].Text
-      value: "\xBFHechizo...?"
+      value: "\xBFHechizo...? "
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -2604,8 +2604,8 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextWithCuranderoS4.Array.data[4].Text
-      value: No te asustes, es totalmente indoloro. Solo necesitare que me traigas
-        un par de cosas para llevar a cabo el remedio.
+      value: "No te asustes, es totalmente indoloro. Solo necesitar\xE9 que me traigas
+        un par de cosas para llevar a cabo el remedio."
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -2615,7 +2615,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextWithCuranderoS4.Array.data[5].Text
-      value: "Mmmmhh. Est\xE1 bien. \xBFQue necesita?"
+      value: "Mmmmhh. Est\xE1 bien. \xBFQu\xE9 necesita?"
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -2628,7 +2628,7 @@ PrefabInstance:
       value: "Para empezar necesito que me traigas unas flores. Son fundamentales
         para cualquier base de un buen hechizo. Tengo entendido que algunos vecinos
         del pueblo poseen flores en su jard\xEDn con las que podr\xEDa llevar a cabo
-        la receta."
+        la receta. "
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}

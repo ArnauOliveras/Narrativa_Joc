@@ -1162,7 +1162,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextInit9.Array.data[0].Text
-      value: "Ufff que dolor de cabeza\u2026 \xBFHabr\xE1 funcionado el hechizo?"
+      value: "Ufff, qu\xE9 dolor de cabeza\u2026 \xBFHabr\xE1 funcionado el hechizo?"
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -1497,7 +1497,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Text1.Array.data[0].Text
       value: "\xBFMam\xE1 c\xF3mo he llegado a casa? \xBFMe trajo el curandero? \xBFTe
-        dijo algo de mi enfermedad?"
+        dijo algo de mi enfermedad? "
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
@@ -1528,7 +1528,7 @@ PrefabInstance:
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text1.Array.data[3].Text
-      value: "Ni siquiera te acuerdas\u2026 qu\xE9 verg\xFCenza\u2026"
+      value: "Ni siquiera te acuerdas\u2026 qu\xE9 verg\xFCenza\u2026 "
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
@@ -1548,9 +1548,9 @@ PrefabInstance:
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text1.Array.data[5].Text
-      value: "Llegaste a las 7 de la madrugada con unos ojos rojos c\xF3mo tomates.
-        No s\xE9 ni quiero saber que hab\xEDas tomado o bebido\u2026 Agradece que
-        tus amigos que te trajeron a casa. Si no, no s\xE9 ni donde estar\xEDas ahora
+      value: "Llegaste a las 7 de la madrugada con unos ojos rojos como tomates.
+        No s\xE9 ni quiero saber qu\xE9 hab\xEDas tomado o bebido\u2026 Agradece
+        que tus amigos te trajeron a casa. Si no, no s\xE9 ni donde estar\xEDas ahora
         mismo. "
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
@@ -1572,9 +1572,9 @@ PrefabInstance:
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text1.Array.data[7].Text
-      value: "\xA1\xBFQue enfermedad ni que enfermedad?! Enferma me tienes a m\xED!
-        No haces m\xE1s que salir de fiesta y beber todo el d\xEDa. Cualquier d\xEDa
-        acabas en el hospital."
+      value: "\xA1\xBFQu\xE9 enfermedad ni qu\xE9 enfermedad?! Enferma me tienes
+        a m\xED. No haces m\xE1s que salir de fiesta y beber todo el d\xEDa. Cualquier
+        d\xEDa acabas en el hospital. "
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}

@@ -1224,7 +1224,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextEnd10.Array.data[0].Text
-      value: Jan es sedado y se duerme profundamente.
+      value: 'Jan es sedado y se duerme profundamente. '
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -1298,7 +1298,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextEnd210.Array.data[0].Text
-      value: "\xBFY bien?\xBFC\xF3mo te encuentras?"
+      value: "\xBFY bien? \xBFC\xF3mo te encuentras?"
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -1320,7 +1320,7 @@ PrefabInstance:
       propertyPath: TextEnd210.Array.data[2].Text
       value: "Es normal, no te preocupes. Te explico. Hemos detectado tu enfermedad.
         Es muy muy poco habitual. B\xE1sicamente, te permite viajar a trav\xE9s de
-        los sue\xF1os y c\xF3mo consecuencia, a veces ves cosas donde no las hay."
+        los sue\xF1os y como consecuencia, a veces ves cosas donde no las hay. "
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -1354,7 +1354,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TextEnd210.Array.data[5].Text
       value: "\xA1\xBF5 a\xF1os?! El curandero me dijo que al finalizar su hechizo
-        todo estar\xEDa en orden."
+        todo estar\xEDa en orden. "
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -1364,7 +1364,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextEnd210.Array.data[6].Text
-      value: "\xBFCurandero? \xBFA qu\xE9 curandero te refieres?"
+      value: "\xBFCurandero? \xBFA qu\xE9 curandero te refieres? "
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -1374,7 +1374,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextEnd210.Array.data[7].Text
-      value: "Al curandero del pueblo, usted misma lo mencion\xF3 el otro d\xEDa."
+      value: "Al curandero del pueblo, usted misma lo mencion\xF3 el otro d\xEDa. "
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -1395,8 +1395,8 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextEnd310.Array.data[0].Text
-      value: "Jan se va a casa descolocado, convencido de no hab\xEDa sido un sue\xF1o
-        y todo hab\xEDa sido real. "
+      value: "Jan se va a casa descolocado, convencido de que no hab\xEDa sido un
+        sue\xF1o y todo hab\xEDa sido real."
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -1416,7 +1416,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextInit10.Array.data[1].Text
-      value: "\xBFEn que consiste?"
+      value: "\xBFEn qu\xE9 consiste?"
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -1428,7 +1428,7 @@ PrefabInstance:
       propertyPath: TextInit10.Array.data[2].Text
       value: "Te sedaremos y llevaremos a cabo una operaci\xF3n quir\xFArgica para
         extraerte la enfermedad invisible de la cabeza. No debes preocuparte, es
-        indoloro."
+        indoloro. "
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}

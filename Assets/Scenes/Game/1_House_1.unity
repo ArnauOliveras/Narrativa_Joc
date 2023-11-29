@@ -1095,6 +1095,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8223049486454538342, guid: 86563538015eb8740944dae7b9175213,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86563538015eb8740944dae7b9175213, type: 3}
 --- !u!1 &754293256
@@ -1739,8 +1744,8 @@ MonoBehaviour:
     optionFinal: 0
   - Name: ' '
     Text: "La enfermedad no tiene efectos secundarios ni perjudiciales para la salud
-      como tal. Sin embargo hay veces que al despertar, Jan no sabe si sigue desmayado
-      y esta viendo una ilusi\xF3n o si realmente se ha despertado."
+      como tal. Sin embargo, hay veces que al despertar, Jan no sabe si sigue desmayado
+      y est\xE1 viendo una ilusi\xF3n o si realmente se ha despertado. "
     optionFinal: 0
   - Name: ' '
     Text: "Esto provoca que puntualmente vea cosas que realmente no est\xE1n sucediendo."
@@ -1748,7 +1753,7 @@ MonoBehaviour:
   - Name: ' '
     Text: "Jan ha asistido al hospital varias veces en busca de un remedio que le
       permita hacer vida corriente, pero tras varias investigaciones, los m\xE9dicos
-      han tirado la toalla. Catalogan el caso como un \u201Chechizo incurable\u201D."
+      han tirado la toalla. Catalogan el caso como un \"hechizo incurable\"."
     optionFinal: 0
   Text2: []
   repeatText1: 0
@@ -2372,14 +2377,14 @@ MonoBehaviour:
   player: {fileID: 1747185163}
   Text1:
   - Name: Jan
-    Text: "Ya estoy listo mam\xE1. Cuando quieras podemos irnos."
+    Text: "Ya estoy listo mam\xE1. Cuando quieras, podemos irnos. "
     optionFinal: 0
   - Name: Madre
     Text: Dame un segundo que reviso el correo y salimos.
     optionFinal: 0
   - Name: Madre
-    Text: "\xA1Estoy harta de que nos manden publicidad! Para colmo solo dicen tonter\xEDas\u2026
-      Deshecha-lo a la papelera."
+    Text: "Estoy harta de que nos manden publicidad. Para colmo, solo dicen tonter\xEDas\u2026
+      Des\xE9chala en la papelera."
     optionFinal: 0
   Text2: []
   repeatText1: 0
@@ -3410,7 +3415,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextCarta1.Array.data[1].Text
-      value: "Hijo vay\xE1monos que llegaremos tarde."
+      value: "Hijo, v\xE1monos que llegaremos tarde."
       objectReference: {fileID: 0}
     - target: {fileID: 7876066704858991617, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -4013,7 +4018,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Text1.Array.data[1].Text
       value: "Buenos d\xEDas hijo. Recuerda que esta ma\xF1ana tenemos que ir al
-        m\xE9dico. A ver si finalmente te dicen que es lo que tienes."
+        m\xE9dico. A ver si finalmente te dicen qu\xE9 es lo que tienes. "
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
@@ -4034,8 +4039,8 @@ PrefabInstance:
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
       propertyPath: Text1.Array.data[3].Text
-      value: Come algo antes de irnos que no sabemos el tiempo que nos pueden hacer
-        esperar hasta que te atiendan. He dejado comida en la nevera.
+      value: "Come algo antes de irnos, no sabemos cu\xE1nto tiempo nos har\xE1n
+        esperar hasta que te atiendan. He dejado comida en la nevera."
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}
@@ -4116,7 +4121,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Text2.Array.data[2].Text
       value: "\xBFY a qu\xE9 esperas? Al final llegaremos tarde... come algo de la
-        nevera."
+        nevera. "
       objectReference: {fileID: 0}
     - target: {fileID: 4827049268396157600, guid: 79cdc41fc201e1349824d098ec40dec5,
         type: 3}

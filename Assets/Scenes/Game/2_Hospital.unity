@@ -1075,15 +1075,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
+      propertyPath: TextInit3.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
+      propertyPath: TextGoToForest3.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
+        type: 3}
       propertyPath: TextEnd2.Array.data[0].Name
       value: ' '
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextEnd2.Array.data[0].Text
-      value: 'Al salir del hospital, Jan se encuentra frustrado y hundido. Jan vuelve
-        a casa con su madre y prepara la comida. Mientras cocina levanta la tapa
-        de la basura y ve en el fondo la publicidad del curandero. '
+      value: Al salir del hospital, Jan se encuentra frustrado y hundido. Jan vuelve
+        a casa con su madre y prepara la comida. Mientras cocina, levanta la tapa
+        de la basura y ve en el fondo la publicidad del curandero.
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -1094,8 +1104,8 @@ PrefabInstance:
         type: 3}
       propertyPath: TextEnd2.Array.data[1].Text
       value: "Llevado por la desesperaci\xF3n, decide recoger el papel como \xFAltimo
-        recurso. Pese a que no conf\xEDa para nada en ese panfleto, Jan coge un autob\xFAs
-        con destino al pueblo del supuesto curandero. "
+        recurso. Pese a que no conf\xEDa para nada en ese NARRADOR (cont'd) panfleto,
+        Jan coge un autob\xFAs con destino al pueblo del supuesto curandero. "
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -1107,7 +1117,7 @@ PrefabInstance:
       propertyPath: TextInit2.Array.data[0].Text
       value: "Lo siento mucho Jan, pero tras los \xFAltimos an\xE1lisis, seguimos
         sin poder diagnosticar tu enfermedad. Seguiremos haciendo pruebas en busca
-        de un remedio."
+        de un remedio. "
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -1117,7 +1127,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextInit2.Array.data[1].Text
-      value: "Estoy harto! C\xF3mo puede ser que tras a\xF1os de visitas m\xE9dicas,
+      value: "Estoy harto. \xBFC\xF3mo puede ser que tras a\xF1os de visitas m\xE9dicas,
         sig\xE1is sin saber qu\xE9 es lo que me pasa?"
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
@@ -1149,7 +1159,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextInit2.Array.data[4].Text
-      value: "Gracias por nada. Vay\xE1monos mam\xE1."
+      value: "Gracias por nada. V\xE1monos mam\xE1."
       objectReference: {fileID: 0}
     - target: {fileID: 7876066704858991617, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}

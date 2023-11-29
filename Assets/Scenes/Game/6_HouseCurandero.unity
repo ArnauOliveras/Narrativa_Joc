@@ -364,7 +364,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Text1.Array.data[1].Text
       value: "Perfecto, vamos por buen camino. Disculpa, se me olvid\xF3 mencionar
-        que los vecinos est\xE1n hartos de qu\xE9 les robe las flores\u2026 "
+        que los vecinos est\xE1n hartos de que les robe las flores\u2026 "
       objectReference: {fileID: 0}
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
@@ -384,7 +384,7 @@ PrefabInstance:
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
       propertyPath: Text1.Array.data[3].Text
-      value: 'Todo sea por un buen hechizo. '
+      value: Todo sea por un buen hechizo.
       objectReference: {fileID: 0}
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
@@ -414,7 +414,7 @@ PrefabInstance:
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
       propertyPath: Text1.Array.data[6].Text
-      value: Sorprenda-me.
+      value: "Sorpr\xE9ndame."
       objectReference: {fileID: 0}
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,
         type: 3}
@@ -468,7 +468,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Text1.Array.data[11].Text
       value: "\xA1Detente! Es fundamental que para que el hechizo funcione, est\xE9s
-        plenamente descansado. Deber\xEDas dormir antes de irte, de lo contrario
+        plenamente descansado. Deber\xEDas dormir antes de irte; de lo contrario,
         el hechizo podr\xEDa resultar defectuoso."
       objectReference: {fileID: 0}
     - target: {fileID: 2670081826035606645, guid: 0f56de9ff8752cc449efde4d56c3b855,

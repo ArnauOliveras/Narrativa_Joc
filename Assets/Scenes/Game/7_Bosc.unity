@@ -1976,27 +1976,27 @@ MonoBehaviour:
   UI: {fileID: 869271043}
   TextAdd:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya, un insecto!"
+    Text: "\xA1Vaya, un insecto! "
     optionFinal: 0
   TextAddLast:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya, un insecto!"
+    Text: "\xA1Vaya, un insecto! "
     optionFinal: 0
   - Name: ' '
     Text: "\xA1Con este ya van 5! Debo volver antes de que se haga tarde."
     optionFinal: 0
   TextNoAdd:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya! Al parecer aqu\xED no hay nada\u2026 "
+    Text: "\xA1Vaya! Al parecer aqu\xED no hay nada\u2026"
     optionFinal: 0
   addGusano: 0
 --- !u!1001 &358644793
@@ -2923,27 +2923,27 @@ MonoBehaviour:
   UI: {fileID: 869271043}
   TextAdd:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya, un insecto!"
+    Text: "\xA1Vaya, un insecto! "
     optionFinal: 0
   TextAddLast:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya, un insecto!"
+    Text: "\xA1Vaya, un insecto! "
     optionFinal: 0
   - Name: ' '
     Text: "\xA1Con este ya van 5! Debo volver antes de que se haga tarde."
     optionFinal: 0
   TextNoAdd:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya! Al parecer aqu\xED no hay nada\u2026 "
+    Text: "\xA1Vaya! Al parecer aqu\xED no hay nada\u2026"
     optionFinal: 0
   addGusano: 0
 --- !u!4 &541615041 stripped
@@ -3431,7 +3431,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextEndMedicaS7.Array.size
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3442,7 +3442,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TextInit7.Array.data[0].Text
       value: "Seg\xFAn el curandero, los insectos deber\xEDan encontrarse debajo
-        de los arboles mas grandes. \xA1Manos a la obra pues!"
+        de los \xE1rboles m\xE1s grandes. \xA1Manos a la obra pues! "
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3454,7 +3454,7 @@ PrefabInstance:
       propertyPath: TextFinal1S7.Array.data[0].Text
       value: "Lo siento, no pretendo ofender tu juramento o lo que demonios sea\u2026
         pero ese curandero es el \xFAnico que me ha dado algo de esperanza dentro
-        de tanta incertidumbre. "
+        de tanta incertidumbre."
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3474,7 +3474,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextFinal1S7.Array.data[2].Text
-      value: Gracias por ayudarme a recuperar el conocimiento pero debo irme.
+      value: Gracias por ayudarme a recuperar el conocimiento, pero debo irme.
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3494,7 +3494,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextFinal2S7.Array.data[1].Text
-      value: "\xA1Genial! Ya ver\xE1s como todo sale como la seda."
+      value: " \xA1Genial! Ya ver\xE1s como todo sale como la seda. "
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3514,7 +3514,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextDesmayoS7.Array.data[1].Text
-      value: "Si me desmayo aqu\xED no me encontrar\xE1 nadie!"
+      value: "Si me desmayo aqu\xED no me encontrar\xE1 nadie! "
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3555,7 +3555,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TextEndMedicaS7.Array.data[0].Text
       value: "\xA1Chico! \xA1Chico! \xBFTe encuentras bien? Me ha parecido escuchar
-        a alguien pedir ayuda. Justo pasaba por aqu\xED cerca buscandote."
+        a alguien pedir ayuda. Justo pasaba por aqu\xED cerca busc\xE1ndote. "
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3565,7 +3565,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextEndMedicaS7.Array.data[1].Text
-      value: "\xBFQu\xE9 ha pasado? Solo recuerdo desmayarme en el bosque\u2026"
+      value: "\xBFQu\xE9 ha pasado? Solo recuerdo desmayarme en el bosque\u2026 "
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3577,8 +3577,7 @@ PrefabInstance:
       propertyPath: TextEndMedicaS7.Array.data[2].Text
       value: "Los vecinos del pueblo me dijeron que estabas colaborando con el curandero,
         en busca de una soluci\xF3n a tu enfermedad. Deber\xEDas alejarte de ese
-        hombre, te est\xE1 utilizando c\xF3mo conejillo de indias para su propio
-        beneficio. "
+        hombre, te est\xE1 utilizando como conejillo de indias para su propio beneficio. "
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3599,8 +3598,8 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextEndMedicaS7.Array.data[4].Text
-      value: "Yo creo poder ayudarte. Te lo dije, las enfermedades invisibles s\xF3n
-        mi especialidad."
+      value: Yo creo poder ayudarte. Te lo dije, las enfermedades invisibles son
+        mi especialidad.
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3610,7 +3609,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextEndMedicaS7.Array.data[5].Text
-      value: "\xBFPorqu\xE9 querr\xEDas ayudarme? No tengo dinero\u2026"
+      value: "\xBFPor qu\xE9 querr\xEDas ayudarme? No tengo dinero\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3621,7 +3620,8 @@ PrefabInstance:
         type: 3}
       propertyPath: TextEndMedicaS7.Array.data[6].Text
       value: "No me perdonar\xEDa el hecho de que acabases malparado pudi\xE9ndote
-        haber ayudado."
+        haber ayudado. Lo entender\xEDas si estuvieras al corriente del juramento
+        hipocr\xE1tico que hacemos los m\xE9dicos al finalizar nuestra formaci\xF3n\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3631,19 +3631,19 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextEndMedicaS7.Array.data[7].Text
-      value: "Lo entender\xEDas si estuvieras al corriente del juramento hipocr\xE1tico
-        que hacemos los m\xE9dicos al finalizar nuestra formaci\xF3n\u2026"
+      value: "Sin embargo, por ese mismo juramento, no puedo presionarte a hacer
+        nada en contra de tu voluntad. \xBFY bien? \xBFQu\xE9 me dices?"
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextEndMedicaS7.Array.data[8].Name
-      value: "M\xE9dica"
+      value: ' '
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextEndMedicaS7.Array.data[8].Text
-      value: "Sin embargo, por ese mismo juramento, no puedo presionarte a hacer
-        nada en contra de tu voluntad. \xBFY bien?\xBFQu\xE9 me dices?"
+      value: "\xBFSeguir el camino de lo m\xEDstico con el curandero o confiar en
+        la medicina tradicional con la m\xE9dica?"
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3686,7 +3686,7 @@ PrefabInstance:
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
       propertyPath: TextEndMedicaS7.Array.data[8].optionFinal
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7689725720727375593, guid: cc968f5dcc8aa264c9893d86edc1f9ad,
         type: 3}
@@ -3960,27 +3960,27 @@ MonoBehaviour:
   UI: {fileID: 869271043}
   TextAdd:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya, un insecto!"
+    Text: "\xA1Vaya, un insecto! "
     optionFinal: 0
   TextAddLast:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya, un insecto!"
+    Text: "\xA1Vaya, un insecto! "
     optionFinal: 0
   - Name: ' '
     Text: "\xA1Con este ya van 5! Debo volver antes de que se haga tarde."
     optionFinal: 0
   TextNoAdd:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya! Al parecer aqu\xED no hay nada\u2026 "
+    Text: "\xA1Vaya! Al parecer aqu\xED no hay nada\u2026"
     optionFinal: 0
   addGusano: 1
 --- !u!1 &672267297
@@ -6577,27 +6577,27 @@ MonoBehaviour:
   UI: {fileID: 869271043}
   TextAdd:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya, un insecto!"
+    Text: "\xA1Vaya, un insecto! "
     optionFinal: 0
   TextAddLast:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya, un insecto!"
+    Text: "\xA1Vaya, un insecto! "
     optionFinal: 0
   - Name: ' '
     Text: "\xA1Con este ya van 5! Debo volver antes de que se haga tarde."
     optionFinal: 0
   TextNoAdd:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya! Al parecer aqu\xED no hay nada\u2026 "
+    Text: "\xA1Vaya! Al parecer aqu\xED no hay nada\u2026"
     optionFinal: 0
   addGusano: 1
 --- !u!4 &1146619809 stripped
@@ -7573,27 +7573,27 @@ MonoBehaviour:
   UI: {fileID: 869271043}
   TextAdd:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya, un insecto!"
+    Text: "\xA1Vaya, un insecto! "
     optionFinal: 0
   TextAddLast:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya, un insecto!"
+    Text: "\xA1Vaya, un insecto! "
     optionFinal: 0
   - Name: ' '
     Text: "\xA1Con este ya van 5! Debo volver antes de que se haga tarde."
     optionFinal: 0
   TextNoAdd:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya! Al parecer aqu\xED no hay nada\u2026 "
+    Text: "\xA1Vaya! Al parecer aqu\xED no hay nada\u2026"
     optionFinal: 0
   addGusano: 1
 --- !u!1001 &1362455156
@@ -7985,27 +7985,27 @@ MonoBehaviour:
   UI: {fileID: 869271043}
   TextAdd:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya, un insecto!"
+    Text: "\xA1Vaya, un insecto! "
     optionFinal: 0
   TextAddLast:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya, un insecto!"
+    Text: "\xA1Vaya, un insecto! "
     optionFinal: 0
   - Name: ' '
     Text: "\xA1Con este ya van 5! Debo volver antes de que se haga tarde."
     optionFinal: 0
   TextNoAdd:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya! Al parecer aqu\xED no hay nada\u2026 "
+    Text: "\xA1Vaya! Al parecer aqu\xED no hay nada\u2026"
     optionFinal: 0
   addGusano: 0
 --- !u!1001 &1408323375
@@ -8178,27 +8178,27 @@ MonoBehaviour:
   UI: {fileID: 869271043}
   TextAdd:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya, un insecto!"
+    Text: "\xA1Vaya, un insecto! "
     optionFinal: 0
   TextAddLast:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya, un insecto!"
+    Text: "\xA1Vaya, un insecto! "
     optionFinal: 0
   - Name: ' '
     Text: "\xA1Con este ya van 5! Debo volver antes de que se haga tarde."
     optionFinal: 0
   TextNoAdd:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya! Al parecer aqu\xED no hay nada\u2026 "
+    Text: "\xA1Vaya! Al parecer aqu\xED no hay nada\u2026"
     optionFinal: 0
   addGusano: 0
 --- !u!1001 &1420807669
@@ -8292,27 +8292,27 @@ MonoBehaviour:
   UI: {fileID: 869271043}
   TextAdd:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya, un insecto!"
+    Text: "\xA1Vaya, un insecto! "
     optionFinal: 0
   TextAddLast:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya, un insecto!"
+    Text: "\xA1Vaya, un insecto! "
     optionFinal: 0
   - Name: ' '
     Text: "\xA1Con este ya van 5! Debo volver antes de que se haga tarde."
     optionFinal: 0
   TextNoAdd:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya! Al parecer aqu\xED no hay nada\u2026 "
+    Text: "\xA1Vaya! Al parecer aqu\xED no hay nada\u2026"
     optionFinal: 0
   addGusano: 1
 --- !u!1001 &1454444307
@@ -8406,27 +8406,27 @@ MonoBehaviour:
   UI: {fileID: 869271043}
   TextAdd:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya, un insecto!"
+    Text: "\xA1Vaya, un insecto! "
     optionFinal: 0
   TextAddLast:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya, un insecto!"
+    Text: "\xA1Vaya, un insecto! "
     optionFinal: 0
   - Name: ' '
     Text: "\xA1Con este ya van 5! Debo volver antes de que se haga tarde."
     optionFinal: 0
   TextNoAdd:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya! Al parecer aqu\xED no hay nada\u2026 "
+    Text: "\xA1Vaya! Al parecer aqu\xED no hay nada\u2026"
     optionFinal: 0
   addGusano: 0
 --- !u!1001 &1474523370
@@ -8947,27 +8947,27 @@ MonoBehaviour:
   UI: {fileID: 869271043}
   TextAdd:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya, un insecto!"
+    Text: "\xA1Vaya, un insecto! "
     optionFinal: 0
   TextAddLast:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya, un insecto!"
+    Text: "\xA1Vaya, un insecto! "
     optionFinal: 0
   - Name: ' '
     Text: "\xA1Con este ya van 5! Debo volver antes de que se haga tarde."
     optionFinal: 0
   TextNoAdd:
   - Name: ' '
-    Text: "Jan busca debajo del arbol y\u2026"
+    Text: "Jan busca debajo del \xE1rbol y\u2026"
     optionFinal: 0
   - Name: ' '
-    Text: "\xA1Vaya! Al parecer aqu\xED no hay nada\u2026 "
+    Text: "\xA1Vaya! Al parecer aqu\xED no hay nada\u2026"
     optionFinal: 0
   addGusano: 1
 --- !u!1 &1611235912
